@@ -7,8 +7,12 @@
   set-paper-size = "a4"
   top-margin = 10
   indent = 10
-  max-systems-per-page = 2
+  max-systems-per-page = 3
   system-system-spacing.basic-distance = 10
+  system-system-spacing.score-markup-spacing = 10
+  % system-system-spacing.minium-distance = 8
+  % system-system-spacing.padding = 2
+  system-system-spacing.stretchability = 12
   % annotate-spacing = ##t
 }
 
@@ -39,7 +43,8 @@ global = {
 
 sottovoce = \markup { \italic "sotto voce" }
 
-sopranonotes = \relative c'' {
+SopranoMusic = \relative c'' {
+  \global
   \compressMMRests {
     R1*2
     ^ \markup Adagio
@@ -104,7 +109,7 @@ sopranonotes = \relative c'' {
   }
 }
 
-sopranowords = \lyricmode {
+SopranoLyrics = \lyricmode {
   A -- ve, a -- ve ve -- rum cor -- pus,
   na -- tum de Ma -- ri -- a Vir -- gi -- ne,
   ve -- re pas -- sum, im -- mo -- la -- tum
@@ -116,7 +121,8 @@ sopranowords = \lyricmode {
   in mor -- tis ex -- a -- mi -- ne.
 }
 
-altonotes = \relative c' {
+AltoMusic = \relative c' {
+  \global
   \compressMMRests {
     R1*2
   }
@@ -174,7 +180,7 @@ altonotes = \relative c' {
 
 }
 
-altowords = \lyricmode {
+AltoLyrics = \lyricmode {
   A -- ve, a -- ve ve -- rum cor -- pus,
   na -- tum de Ma -- ri -- a Vir -- gi -- ne,
   ve -- re pas -- sum, im -- mo -- la -- tum
@@ -186,7 +192,8 @@ altowords = \lyricmode {
   in mor -- tis ex -- a -- mi -- ne.
  }
 
-tenornotes = \relative c {
+TenorMusic = \relative c {
+  \global
   \clef "G_8"
   \compressMMRests {
     R1*2
@@ -245,7 +252,7 @@ tenornotes = \relative c {
 
 }
 
-tenorwords = \lyricmode {
+TenorLyrics = \lyricmode {
   A -- ve, a -- ve ve -- rum cor -- pus,
   na -- tum de Ma -- ri -- a Vir -- gi -- ne,
   ve -- re pas -- sum, im -- mo -- la -- tum
@@ -257,7 +264,8 @@ tenorwords = \lyricmode {
   in mor -- tis ex -- a -- mi -- ne.
  }
 
-bassnotes = \relative c {
+BassMusic = \relative c {
+  \global
   \clef bass
   \compressMMRests {
     R1*2
@@ -320,7 +328,7 @@ bassnotes = \relative c {
 
 }
 
-basswords = \lyricmode {
+BassLyrics = \lyricmode {
   A -- ve, a -- ve ve -- rum cor -- pus,
   na -- tum de Ma -- ri -- a Vir -- gi -- ne,
   ve -- re pas -- sum, im -- mo -- la -- tum
@@ -332,60 +340,14 @@ basswords = \lyricmode {
   in mor -- tis ex -- a -- mi -- ne.
  }
 
-\score {
-  \new ChoirStaff <<
-    \new Staff
-    \with { instrumentName = S }
-    <<
-      \new Voice = "soprano" <<
-        \global
-        \sopranonotes
-      >>
-      \new Lyrics \lyricsto "soprano" \sopranowords
-    >>
-    \new Staff
-    \with { instrumentName = C }
-    <<
-      \new Voice = "alto" <<
-        \global
-        \altonotes
-      >>
-      \new Lyrics \lyricsto "alto" \altowords
-    >>
-    \new Staff
-    \with { instrumentName = T }
-    <<
-      \new Voice = "tenor" <<
-        \global
-        \tenornotes
-      >>
-      \new Lyrics \lyricsto "tenor" \tenorwords
-    >>
-    \new Staff
-    \with { instrumentName = B }
-    <<
-      \new Voice = "bass" <<
-        \global
-        \bassnotes
-      >>
-      \new Lyrics \lyricsto "bass" \basswords
-    >>
-  >>
 
-  \layout {
+%  TwoVoicesPerStaff = ##t
+
+Layout =   \layout {
     \context {
       \Score
-      \override BarNumber.padding = #2
-
-
-    }
-    \context {
-      \Staff
-
-
+      \override BarNumber.padding = 2
     }
   }
-  \midi {
-    \tempo 4=106
-  }
-}
+
+ \include "satb.ly"
