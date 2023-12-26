@@ -222,10 +222,10 @@ tenornotes = \relative c {
   b?2. b4 |
   cs?( d4) e cs |
   cs2( d4) b? |
-  e2 r |
+  e,2 r |
 %30
   r1 |
-  b2. b4 |
+  b'2. b4 |
   b( a) g( cs) |
   cs2. cs4 |
   cs( b) a d |
@@ -238,7 +238,7 @@ tenornotes = \relative c {
   b4 d cs b|
   a2) a4 \breathe g |
   a2( g4.) g8 |
-  a1 |
+  fs1 |
   \compressMMRests {
   R1*3 \bar "|."
   }
