@@ -39,7 +39,7 @@ global = {
 
 }
 
-sopranonotes = \relative c'' {
+SopranoMusic = \relative c'' {
   \repeat volta 2 { d4 \f cs8. b16 |
   a4. g8 |
   fs4 e |
@@ -70,7 +70,7 @@ sopranonotes = \relative c'' {
     }
 }
 
-sopranowords = \lyricmode {
+SopranoLyrics = \lyricmode {
   Al -- le -- lu -- ia, al -- le -- lu -- ia,
   be -- ne -- di -- cat vo -- bis, __
   Do -- mi -- nus, __ Do -- mi -- nus, __
@@ -79,7 +79,7 @@ sopranowords = \lyricmode {
   Al -- le -- lu -- ia.
   }
 
-altonotes = \relative c' {
+AltoMusic = \relative c' {
   \repeat volta 2 { \f fs4 a8. g16 |
   fs4. e8 |
   d4 cs |
@@ -111,7 +111,7 @@ altonotes = \relative c' {
     }
 }
 
-altowords = \lyricmode {
+AltoLyrics = \lyricmode {
 Al -- le -- lu -- ia, al -- le -- lu -- ia,
 be -- ne -- di -- cat vo -- bis, __
 Do -- mi -- nus, __ Do -- mi -- nus, __
@@ -120,7 +120,7 @@ qui fe - cit  coe -- lum et te -- ra.   ra.
 Al -- le -- lu -- ia.
 }
 
-tenornotes = \relative c {
+TenorMusic = \relative c {
   \clef "G_8"
   \repeat volta 2 {\f d'4 d8. d16 |
   d4. b8 |
@@ -153,14 +153,14 @@ tenornotes = \relative c {
     }
 }
 
-tenorwords = \lyricmode {
+TenorLyrics = \lyricmode {
 Al -- le -- lu -- ia, al -- le -- lu -- ia,
 be -- ne -- di -- cat vo -- bis, __
 qui fe -- cit coe - lum,
 qui fe - cit  coe -- lum et te -- ra.  ra.
 Al -- le -- lu -- ia.}
 
-bassnotes = \relative c {
+BassMusic = \relative c {
   \clef bass
   \repeat volta 2 {d4 d8. d16 |
   d4. g8 |
@@ -193,7 +193,7 @@ bassnotes = \relative c {
     }
 }
 
-basswords = \lyricmode {
+BassLyrics = \lyricmode {
   Al -- le -- lu -- ia, al -- le -- lu -- ia,
   be -- ne -- di -- cat vo -- bis, __
   qui fe -- cit coe - lum,
@@ -201,56 +201,11 @@ basswords = \lyricmode {
   Al -- le -- lu -- ia.
 }
 
-\score {
-  \new ChoirStaff <<
-    \new Staff
-    \with { instrumentName = S }
-    <<
-      \new Voice = "soprano" <<
-        \global
-        \sopranonotes
-      >>
-      \new Lyrics \lyricsto "soprano" \sopranowords
-    >>
-    \new Staff
-    \with { instrumentName = C }
-    <<
-      \new Voice = "alto" <<
-        \global
-        \altonotes
-      >>
-      \new Lyrics \lyricsto "alto" \altowords
-    >>
-    \new Staff
-    \with { instrumentName = T }
-    <<
-      \new Voice = "tenor" <<
-        \global
-        \tenornotes
-      >>
-      \new Lyrics \lyricsto "tenor" \tenorwords
-    >>
-    \new Staff
-    \with { instrumentName = B }
-    <<
-      \new Voice = "bass" <<
-        \global
-        \bassnotes
-      >>
-      \new Lyrics \lyricsto "bass" \basswords
-    >>
-  >>
-\midi {
-  \tempo 4=106
- }
- \layout {
-  \context {\Score
-  \override BarNumber.padding = #2
-
+Layout = \layout {
+  \context {
+    \Score
+    \override BarNumber.padding = #2
   }
-  \context {\Staff
-
-
-	}
 }
-}
+
+\include "satb.ly"
