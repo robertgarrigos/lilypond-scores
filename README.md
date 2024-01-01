@@ -2,7 +2,7 @@
 My personal scores' archive engraved with Lilypond. These are mainly choral works in the public domain.
 
 ## Haendel, G. F.
-* **Bendicat Vobis**, SATB
+* **Benedicat Vobis**, SATB
 
 ## Humperdinck, H.
 * **Bona nit**, SATB, with catalan words of the duet *Abends, will ich schlafen gehn* from *Hänsel und Gretel*
