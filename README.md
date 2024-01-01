@@ -8,7 +8,7 @@ My personal scores' archive engraved with Lilypond. These are mainly choral work
 * **Bona nit**, SATB, with catalan words of the duet *Abends, will ich schlafen gehn* from *Hänsel und Gretel*
 
 ## Mozart, W. A.
-* **Ave Verum, K618**, SATB (no piano/prchestra part)
+* **Ave Verum, K618**, SATB (no piano/orchestra part)
 
 
 
