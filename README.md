@@ -1,5 +1,5 @@
 # lilypond-scores
-My personal scores' archive engraved with Lilypond. These are mainly choral works in the public domain.
+My personal scores' archive engraved with Lilypond. These are mainly choral works in the public domain. This repository contains only the Lilypond files. You will find their PDFs on my website https://www.garrigos.cat/partitures
 
 ## Haendel, G. F.
 * **Benedicat Vobis**, SATB
