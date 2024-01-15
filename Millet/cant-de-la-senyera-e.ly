@@ -49,6 +49,7 @@ global = {
   % \set Score.currentBarNumber = #3
   \set Score.barNumberVisibility = #(every-nth-bar-number-visible 5)
   \set Score.tempoHideNote = ##t
+  \set Score.printKeyCancellation = ##t
 }
 
 majestuos  = {
