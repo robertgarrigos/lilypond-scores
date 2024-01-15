@@ -2,19 +2,34 @@
 \language "english"
 
 #(set-global-staff-size 18)
+data = #(strftime "%d-%m-%Y - %H:%M:%S" (localtime (current-time)))
+
 
 \paper {
   set-paper-size = "a4"
   top-margin = 10
-  left-margin = 15
-  indent = 15
+  indent = 10
   max-systems-per-page = 2
-  system-system-spacing.basic-distance = 10
+  system-system-spacing.basic-distance = 8
   system-system-spacing.score-markup-spacing = 10
   % system-system-spacing.minium-distance = 8
   % system-system-spacing.padding = 2
   system-system-spacing.stretchability = 12
   % annotate-spacing = ##t
+  % print-all-headers = ##t
+  % print-first-page-number = ##t
+  oddFooterMarkup = \markup {
+    \center-column {
+      \line { \fromproperty #'header:title " - pàgina" \fromproperty #'page:page-number-string "de" \concat {\page-ref #'lastPage "0" "?"} }
+      \fill-line { \fromproperty #'header:copyright }
+    }
+  }
+  evenFooterMarkup = \markup {
+     \center-column {
+      \line { \fromproperty #'header:title " - pàgina" \fromproperty #'page:page-number-string "de" \concat {\page-ref #'lastPage "0" "?"} }
+      \fill-line { \fromproperty #'header:copyright }
+    }
+  }
 }
 
 \header {
@@ -22,8 +37,7 @@
   subtitle = "Hänsel i Gretel"
   composer = \markup {
     \center-column {
-      \line {"H. Humperdinck"}
-      \line {"(1854-1921)"}
+      \line {"H. Humperdinck (1854-1921)"}
       \line {"Arr. Robert Garrigós"}
     }
   }
@@ -31,8 +45,8 @@
   % piece = "Lorem ipsum"
   copyright = \markup {
     \center-column {
-      \line { "Engraving by Robert Garrigós" \with-url #"https://garrigos.cat" "https://garrigos.cat"}
-      \line { "Creative Commons Attribution 4.0 International (CC BY 4.0)" }
+      \line { "Gravat musical per Robert Garrigós" \with-url #"https://garrigos.cat" "https://garrigos.cat" \with-url #"https://creativecommons.org/licenses/by/4.0/deed.ca" "(CC BY 4.0)" " amb " \with-url #"https://lilypond.org" "Lilypond" " el" \data }
+      % \line { "Creative Commons Attribution 4.0 International (CC BY 4.0)" }
     }
   }
 }
@@ -45,6 +59,8 @@ global = {
   #'()       % beamExceptions
   \key d \major
   \time 4/4
+  % \set Score.tempoHideNote = ##t
+  \tempo 4 = 60
   % \set melismaBusyProperties = #'()
 
 }
@@ -210,6 +226,7 @@ BassMusic = \relative {
   \<a1~ |
   a2.\! \>a4 |
   d2\! r2 |
+  \label #'lastPage
   }
 BassLyrics = \lyricmode {
   Bo -- na nit al món,
