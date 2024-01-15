@@ -2,6 +2,7 @@
 \language "english"
 
 #(set-global-staff-size 17)
+data = #(strftime "%d-%m-%Y - %H:%M:%S" (localtime (current-time)))
 
 \paper {
   set-paper-size = "a4"
@@ -14,9 +15,21 @@
   % system-system-spacing.padding = 2
   system-system-spacing.stretchability = 12
   % annotate-spacing = ##t
+  % print-all-headers = ##t
+  % print-first-page-number = ##t
+  oddFooterMarkup = \markup {
+    \center-column {
+      \line { \fromproperty #'header:title " - pàgina" \fromproperty #'page:page-number-string "de" \concat {\page-ref #'lastPage "0" "?"} }
+      \fill-line { \fromproperty #'header:copyright }
+    }
+  }
+  evenFooterMarkup = \markup {
+     \center-column {
+      \line { \fromproperty #'header:title " - pàgina" \fromproperty #'page:page-number-string "de" \concat {\page-ref #'lastPage "0" "?"} }
+      \fill-line { \fromproperty #'header:copyright }
+    }
+  }
 }
-
-data = #(strftime "%d-%m-%Y - %H:%M:%S" (localtime (current-time)))
 
 \header {
   title = "El Cant de la Senyera"
@@ -33,13 +46,12 @@ data = #(strftime "%d-%m-%Y - %H:%M:%S" (localtime (current-time)))
   % piece = "Lorem ipsum"
   copyright = \markup {
     \center-column {
-      \line { "Engraving by Robert Garrigós" \with-url #"https://garrigos.cat" "https://garrigos.cat - " \data}
-      \line { "Creative Commons Attribution 4.0 International (CC BY 4.0)" }
+      \line { "Gravat musical per Robert Garrigós" \with-url #"https://garrigos.cat" "https://garrigos.cat" \with-url #"https://creativecommons.org/licenses/by/4.0/deed.ca" "(CC BY 4.0)" " amb " \with-url #"https://lilypond.org" "Lilypond" " el" \data }
+      % \line { "Creative Commons Attribution 4.0 International (CC BY 4.0)" }
     }
   }
+  tagline = ##f
 }
-
-
 
 global = {
   % \overrideTimeSignatureSettings
@@ -178,6 +190,7 @@ SopranoMusic = \relative c' {
   fs8.  e16 fs4 fs |
   b8. gs16 gs4. e8 |
   fs8. e16 e2\fermata \bar "|."
+  \label #'lastPage
 }
 SopranoLyrics = \lyricmode {
   Al da -- munt dels nos -- tres cants
