@@ -15,6 +15,7 @@
   system-system-spacing.stretchability = 12
   % annotate-spacing = ##t
 }
+data = #(strftime "%d-%m-%Y - %H:%M:%S" (localtime (current-time)))
 
 \header {
   title = "El Cant de la Senyera"
@@ -31,7 +32,7 @@
   % piece = "Lorem ipsum"
   copyright = \markup {
     \center-column {
-      \line { "Engraving by Robert Garrigós" \with-url #"https://garrigos.cat" "https://garrigos.cat"}
+      \line { "Engraving by Robert Garrigós" \with-url #"https://garrigos.cat" "https://garrigos.cat - " \data }
       \line { "Creative Commons Attribution 4.0 International (CC BY 4.0)" }
     }
   }
