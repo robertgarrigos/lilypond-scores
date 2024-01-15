@@ -1,17 +1,31 @@
 # lilypond-scores
 My personal scores' archive engraved with Lilypond. These are mainly choral works in the public domain. This repository contains only the Lilypond files. You will find their PDFs on my website https://www.garrigos.cat/partitures
 
-## Grandi, A.
-* **Cantabo Domino**, voice + figured bass
+## Clàssica
 
-## Haendel, G. F.
-* **Benedicat Vobis**, SATB
+### Grandi, A.
+* **[Cantabo Domino](Grandi/cantabo-domino.ly)**, veu  + baix xifrat
 
-## Humperdinck, H.
-* **Bona nit**, SATB, with catalan words of the duet *Abends, will ich schlafen gehn* from *Hänsel und Gretel*
+### Haendel, G. F.
+* **[Benedicat Vobis](Haendel/benedicat-vobis.ly)**, SATB
 
-## Mozart, W. A.
-* **Ave Verum, K618**, SATB (no piano/orchestra part)
+### Humperdinck, H.
+* **[Bona nit](Humperdinck/bona-nit.ly)**, SATB, amb text en català del duo *Abends, will ich schlafen gehn* de l'òpera *Hänsel und Gretel*
+
+### Millet, Ll.
+* **[Cant de la Senyera](Millet/cant-de-la-senyera-e.ly)**, SB, facilitat a dues veus i baixat a Mi major.
+* **[Cant de la Senyera](Millet/cant-de-la-senyera.ly)**, SB, facilitat a dues veus i baixat a Fa major.
+
+### Mozart, W. A.
+* **[Ave Verum, K618](Mozart/Ave-verum-k618.ly)**, SATB (només cor, sense piano, en dues pàgines)
+* **[Ave Verum, K618](Mozart/Ave-verum-k618-1p.ly)**, SATB (només cor, sense piano, en una pàgines)
+
+## Popular Irlandesa
+### Jig
+* **[Cheris the Ladies](irish/Cherish-the-Ladies.ly)**
+* **[The boys of Blue Hill](irish/The-boys-of-blue-hill.ly)**
+* **[The castel of Dromore](irish/The%20castle%20of%20Dromore.ly)**
+* **[The fiedls of Athenry](irish/The%20fields%20of%20Athenry.ly)**
 
 
 
