@@ -2,6 +2,7 @@
 \language "english"
 
 #(set-global-staff-size 17.5)
+data = #(strftime "%d-%m-%Y - %H:%M:%S" (localtime (current-time)))
 
 
 \paper {
@@ -9,20 +10,38 @@
   top-margin = 10
   indent = 10
   max-systems-per-page = 3
-  % annotate-spacing = ##t
   system-system-spacing.basic-distance = 20
+  system-system-spacing.score-markup-spacing = 10
+  % system-system-spacing.minium-distance = 8
+  % system-system-spacing.padding = 2
+  system-system-spacing.stretchability = 12
+  % annotate-spacing = ##t
+  % print-all-headers = ##t
+  % print-first-page-number = ##t
+  oddFooterMarkup = \markup {
+    \center-column {
+      \line { \fromproperty #'header:title "- pàgina" \fromproperty #'page:page-number-string "de" \concat {\page-ref #'lastPage "0" "?"} }
+      \fill-line { \fromproperty #'header:copyright }
+    }
   }
+  evenFooterMarkup = \markup {
+     \center-column {
+      \line { \fromproperty #'header:title "- pàgina" \fromproperty #'page:page-number-string "de" \concat {\page-ref #'lastPage "0" "?"} }
+      \fill-line { \fromproperty #'header:copyright }
+    }
+  }
+}
 
 \header {
   title = "Benedicat Vobis"
   % subtitle = "Lorem ipsum"
-  composer = "G. F. Haendel"
-  opus = "(1685-1759)"
+  composer = "G. F. Haendel (1685-1759)"
+  % opus = "(1685-1759)"
   % piece = "Lorem ipsum"
   copyright = \markup {
     \center-column {
-      \line { "Engraving by Robert Garrigós" \with-url #"https://garrigos.cat" "https://garrigos.cat"}
-      \line { "Creative Commons Attribution 4.0 International (CC BY 4.0)"}
+      \line { "Gravat musical per Robert Garrigós" \with-url #"https://garrigos.cat" "https://garrigos.cat" \with-url #"https://creativecommons.org/licenses/by/4.0/deed.ca" "(CC BY 4.0)" "amb" \with-url #"https://lilypond.org" "Lilypond" "el" \data }
+      % \line { "Creative Commons Attribution 4.0 International (CC BY 4.0)" }
     }
   }
 }
@@ -36,10 +55,13 @@ global = {
   \key d \major
   \time 2/4
   \dynamicUp
-
+  \set Score.tempoHideNote = ##t
+  \tempo "Allegro"
+  \tempo 4 = 106
 }
 
 SopranoMusic = \relative c'' {
+  \global
   \repeat volta 2 { d4 \f cs8. b16 |
   a4. g8 |
   fs4 e |
@@ -80,6 +102,7 @@ SopranoLyrics = \lyricmode {
   }
 
 AltoMusic = \relative c' {
+  \global
   \repeat volta 2 { \f fs4 a8. g16 |
   fs4. e8 |
   d4 cs |
@@ -121,6 +144,7 @@ Al -- le -- lu -- ia.
 }
 
 TenorMusic = \relative c {
+  \global
   \clef "G_8"
   \repeat volta 2 {\f d'4 d8. d16 |
   d4. b8 |
@@ -161,6 +185,7 @@ qui fe - cit  coe -- lum et te -- ra.  ra.
 Al -- le -- lu -- ia.}
 
 BassMusic = \relative c {
+  \global
   \clef bass
   \repeat volta 2 {d4 d8. d16 |
   d4. g8 |
@@ -190,6 +215,7 @@ BassMusic = \relative c {
     {d4. \breathe d8 |
     g4. g8 |
     d2 \bar "|."}
+    \label #'lastPage
     }
 }
 
