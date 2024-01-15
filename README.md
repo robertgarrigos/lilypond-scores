@@ -13,8 +13,8 @@ My personal scores' archive engraved with Lilypond. These are mainly choral work
 * **[Bona nit](Humperdinck/bona-nit.ly)**, SATB, amb text en català del duo *Abends, will ich schlafen gehn* de l'òpera *Hänsel und Gretel*
 
 ### Millet, Ll.
-* **[Cant de la Senyera](Millet/cant-de-la-senyera-e.ly)**, SB, facilitat a dues veus i baixat a Mi major.
-* **[Cant de la Senyera](Millet/cant-de-la-senyera.ly)**, SB, facilitat a dues veus i baixat a Fa major.
+* **[El cant de la Senyera](Millet/cant-de-la-senyera-e.ly)**, SB, facilitat a dues veus i baixat a Mi major.
+* **[El cant de la Senyera](Millet/cant-de-la-senyera.ly)**, SB, facilitat a dues veus i baixat a Fa major.
 
 ### Mozart, W. A.
 * **[Ave Verum, K618](Mozart/Ave-verum-k618.ly)**, SATB (només cor, sense piano, en dues pàgines)
