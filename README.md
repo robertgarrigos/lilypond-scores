@@ -21,12 +21,13 @@ My personal scores' archive engraved with Lilypond. These are mainly choral work
 * **[Ave Verum, K618](Mozart/Ave-verum-k618-1p.ly)**, SATB (només cor, sense piano, en una pàgines)
 
 ## Popular Irlandesa
-### Jig
-* **[Cheris the Ladies](irish/Cherish-the-Ladies.ly)**
-* **[The boys of Blue Hill](irish/The-boys-of-blue-hill.ly)**
+### Balades
 * **[The castel of Dromore](irish/The%20castle%20of%20Dromore.ly)**
 * **[The fiedls of Athenry](irish/The%20fields%20of%20Athenry.ly)**
-
+### Hornpipe
+* **[The boys of Blue Hill](irish/The-boys-of-blue-hill.ly)**
+### Jig
+* **[Cheris the Ladies](irish/Cherish-the-Ladies.ly)**
 
 
 This work is licensed under CC BY 4.0. To view a copy of this license, visit http://creativecommons.org/licenses/by/4.0/
