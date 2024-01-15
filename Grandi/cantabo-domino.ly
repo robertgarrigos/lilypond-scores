@@ -2,31 +2,45 @@
 \language "english"
 
 #(set-global-staff-size 17.5)
+data = #(strftime "%d-%m-%Y - %H:%M:%S" (localtime (current-time)))
 
 \paper {
   set-paper-size = "a4"
   top-margin = 10
   indent = 10
   max-systems-per-page = 4
-  system-system-spacing.basic-distance = 10
+  system-system-spacing.basic-distance = 16
   system-system-spacing.score-markup-spacing = 10
   % system-system-spacing.minium-distance = 8
   % system-system-spacing.padding = 2
   system-system-spacing.stretchability = 12
   % annotate-spacing = ##t
-
+  % print-all-headers = ##t
+  % print-first-page-number = ##t
+  oddFooterMarkup = \markup {
+    \center-column {
+      \line { \fromproperty #'header:title " - pàgina" \fromproperty #'page:page-number-string "de" \concat {\page-ref #'lastPage "0" "?"} }
+      \fill-line { \fromproperty #'header:copyright }
+    }
+  }
+  evenFooterMarkup = \markup {
+     \center-column {
+      \line { \fromproperty #'header:title " - pàgina" \fromproperty #'page:page-number-string "de" \concat {\page-ref #'lastPage "0" "?"} }
+      \fill-line { \fromproperty #'header:copyright }
+    }
+  }
 }
 
 \header {
   title = "Cantabo Domino"
   % subtitle = "Lorem ipsum"
-  composer = "Alessandro Grandi"
-  opus = "(1590-1630)"
+  composer = "Alessandro Grandi (1590-1630)"
+  % opus = "(1590-1630)"
   % piece = "Lorem ipsum"
   copyright = \markup {
     \center-column {
-      \line { "Engraving by Robert Garrigós" \with-url #"https://garrigos.cat" "https://garrigos.cat"}
-      \line { "Creative Commons Attribution 4.0 International (CC BY 4.0)" }
+      \line { "Gravat musical per Robert Garrigós" \with-url #"https://garrigos.cat" "https://garrigos.cat" \with-url #"https://creativecommons.org/licenses/by/4.0/deed.ca" "(CC BY 4.0)" "amb" \with-url #"https://lilypond.org" "Lilypond" "el" \data }
+      % \line { "Creative Commons Attribution 4.0 International (CC BY 4.0)" }
     }
   }
 }
@@ -314,6 +328,7 @@ bassus = \relative c {
   g,1 |
   a1 |
   d1 \bar "|."
+  \label #'lastPage
 }
 
 allelujaXifrat = \figuremode {
