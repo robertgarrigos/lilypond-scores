@@ -1,20 +1,37 @@
 \version "2.24.3"
 \language "english"
 
-#(set-global-staff-size 17.5)
+#(set-global-staff-size 18)
+data = #(strftime "%d-%m-%Y - %H:%M:%S" (localtime (current-time)))
+
 
 \paper {
   set-paper-size = "a4"
   top-margin = 10
   indent = 10
-  max-systems-per-page = 3
+  max-systems-per-page = 2
   system-system-spacing.basic-distance = 10
   system-system-spacing.score-markup-spacing = 10
   % system-system-spacing.minium-distance = 8
   % system-system-spacing.padding = 2
   system-system-spacing.stretchability = 12
   % annotate-spacing = ##t
+  % print-all-headers = ##t
+  % print-first-page-number = ##t
+  oddFooterMarkup = \markup {
+    \center-column {
+      \line { \fromproperty #'header:title " - pàgina" \fromproperty #'page:page-number-string "de" \concat {\page-ref #'lastPage "0" "?"} }
+      \fill-line { \fromproperty #'header:copyright }
+    }
+  }
+  evenFooterMarkup = \markup {
+     \center-column {
+      \line { \fromproperty #'header:title " - pàgina" \fromproperty #'page:page-number-string "de" \concat {\page-ref #'lastPage "0" "?"} }
+      \fill-line { \fromproperty #'header:copyright }
+    }
+  }
 }
+
 
 \header {
   title = "Aver Verum"
@@ -24,8 +41,8 @@
   % piece = "Adagio"
   copyright = \markup {
     \center-column {
-      \line { "Engraving by Robert Garrigós" \with-url #"https://garrigos.cat" "https://garrigos.cat"}
-      \line { "Creative Commons Attribution 4.0 International (CC BY 4.0)" }
+      \line { "Gravat musical per Robert Garrigós" \with-url #"https://garrigos.cat" "https://garrigos.cat" \with-url #"https://creativecommons.org/licenses/by/4.0/deed.ca" "(CC BY 4.0)" " amb " \with-url #"https://lilypond.org" "Lilypond" " el" \data }
+      % \line { "Creative Commons Attribution 4.0 International (CC BY 4.0)" }
     }
   }
 }
@@ -324,6 +341,7 @@ BassMusic = \relative c {
   d1 |
   \compressMMRests {
   R1*3 \bar "|."
+  \label #'lastPage
   }
 
 }
