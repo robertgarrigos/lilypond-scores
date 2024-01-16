@@ -8,6 +8,7 @@ data = #(strftime "%d-%m-%Y - %H:%M:%S" (localtime (current-time)))
 \paper {
   set-paper-size = "a4"
   top-margin = 10
+  left-margin = 15
   indent = 10
   max-systems-per-page = 2
   system-system-spacing.basic-distance = 10
