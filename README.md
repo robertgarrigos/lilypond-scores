@@ -19,6 +19,7 @@ My personal scores' archive engraved with Lilypond. These are mainly choral work
 ### Mozart, W. A.
 * **[Ave Verum, K618](Mozart/Ave-verum-k618.ly)**, SATB (només cor, sense piano, en dues pàgines)
 * **[Ave Verum, K618](Mozart/Ave-verum-k618-1p.ly)**, SATB (només cor, sense piano, en una pàgines)
+* **[Dona nobis pacem](Mozart/dona-nobis-pacem.ly)**, canon a 3 veus
 
 ## Popular Irlandesa
 ### Balades
