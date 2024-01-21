@@ -6,6 +6,9 @@ My personal scores' archive engraved with Lilypond. These are mainly choral work
 ### Grandi, A.
 * **[Cantabo Domino](Grandi/cantabo-domino.ly)**, veu  + baix xifrat
 
+### Grüber, F.
+* **[Santa nit](Grüber/santa-nit.ly)**, SATB
+
 ### Haendel, G. F.
 * **[Benedicat Vobis](Haendel/benedicat-vobis.ly)**, SATB
 
