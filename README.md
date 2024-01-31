@@ -6,6 +6,9 @@ My personal scores' archive engraved with Lilypond. These are mainly choral work
 ### Grandi, A.
 * **[Cantabo Domino](Grandi/cantabo-domino.ly)**, veu  + baix xifrat
 
+### Grieg, E.
+* **[Gruss, Op. 48, n. 1](Grieg/Gruss.ly)**, veu i piano
+
 ### Grüber, F.
 * **[Santa nit](Grüber/santa-nit.ly)**, SATB
 
