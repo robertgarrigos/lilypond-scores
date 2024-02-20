@@ -95,7 +95,6 @@ melody = \relative c' {
   | r4 ds4^\p fs4. fs8
   | gs4^\<( b) b2\!
   | r4 as^> r4 gs8^\> gs8\!
-  % | fs2 r8 fs8^\markup {\italic "cresc. ed agitato"} fs ^\<gs
   | <<
     { \voiceOne fs2 }
     \new Voice = "split1" { \voiceTwo \tweak font-size -3 fs4 \tweak font-size -4 fs}
@@ -131,7 +130,7 @@ catala = \lyricmode {
   en fre -- da ter -- ra
   des -- can -- sa -- ràs,
   man -- cat d’a -- mor
-  sen -- se tris -- tor,
+  sen -- se do -- lor,
   en pau se -- ràs.
 
   A -- llò que~en vi -- da
@@ -141,7 +140,7 @@ catala = \lyricmode {
   quan si -- gui fo -- sa,
   se’t do -- na -- rà,
   sen -- se fe -- ri -- des
-  sen -- se tris -- tor,
+  sen -- se do -- lor,
   en pau se -- ràs.
 }
 
@@ -355,8 +354,8 @@ lower = \relative c {
   <<
     \new Voice = "mel" { \autoBeamOff \melody }
     % \new Lyrics \lyricsto mel \text
-    \new Lyrics \lyricsto mel \catala
-    \new Lyrics \lyricsto mel \alemany
+    \new Lyrics \lyricsto "mel" \catala
+    \new Lyrics \lyricsto "mel" \alemany
     \new PianoStaff <<
       \new Staff = "upper" \upper
       \new Staff = "lower" \lower
