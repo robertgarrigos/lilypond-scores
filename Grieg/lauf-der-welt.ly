@@ -160,7 +160,7 @@ catala = \lyricmode {
   No sé pas com s'es -- de -- vin -- gué:
   fa temps la be -- so jo,
   sen -- se per -- mís, no diu que sí,
-  però mai no diu que no.
+  però mai em diu que no.
   Un bes a -- quí, un bes a -- llà,
   ens dei -- xem fer,
   quin gran pla -- er.
