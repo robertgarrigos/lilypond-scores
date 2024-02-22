@@ -46,7 +46,7 @@ data = #(strftime "%d-%m-%Y - %H:%M:%S" (localtime (current-time)))
   % meter = "localmetre"
   % opus = "localopus"
   % piece = "localpiece"
-  poet = "Trad. Robert Garrigós"
+  poet = "Trad. Robert Garrigós i Gemma Aïsa"
   tagline = ##f
   copyright = \markup {
     \center-column {
@@ -150,9 +150,9 @@ text = \lyricmode {
       Ves de -- vo -- ra de la llar,
       on vio -- le -- tes flo -- rei -- xen,
       i si un -- a ro -- sa veus,
-      fes -- la sa -- lu -- da -- da,
+      fes -- li~un -- a -- be -- sa -- da,
       i si un -- a ro -- sa veus,
-      fes -- la sa -- lu -- da -- da.
+      fes -- li~un -- a -- be -- sa -- da.
     }
     \new Lyrics = "secondVerse" \with { alignBelowContext = "text" }
     {
