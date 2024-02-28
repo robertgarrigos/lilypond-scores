@@ -154,14 +154,14 @@ catala = \lyricmode {
   I e -- lla des del seu jar -- dí
   es -- guar -- da~el meu pas -- seig.
   No hem cre -- uat en -- ca -- ra~un mot,
-  no~és me -- nes -- ter, ai -- xí~és l'a -- mor,
-  no~és me -- nes -- ter, ai -- xí~és l'a -- mor.
+  no~ens cal res més, ai -- xí~és l'a -- mor,
+  no~ens cal res més, ai -- xí~és l'a -- mor.
 
   No sé pas com s'es -- de -- vin -- gué:
-  fa temps la be -- so jo,
-  sen -- se per -- mís, no diu que sí,
-  però mai em diu que no.
-  Un bes a -- quí, un bes a -- llà,
+  un jorn la vaig be -- sar,
+  sen -- se per -- mís, no va dir sí,
+  tam -- poc va dir que no.
+  Un bes a -- llà, un bes a -- quí,
   ens dei -- xem fer,
   quin gran pla -- er.
 
