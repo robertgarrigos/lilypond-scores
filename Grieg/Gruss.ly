@@ -1,60 +1,8 @@
 \version "2.24.3"
 \language "english"
 
-#(set-global-staff-size 17.4)
 data = #(strftime "%d-%m-%Y - %H:%M:%S" (localtime (current-time)))
 
-
-\paper {
-  set-paper-size = "a4"
-  top-margin = 10
-  left-margin = 15
-  indent = 10
-  max-systems-per-page = 4
-  score-system-spacing =
-  #'((basic-distance . 12)
-     (minimum-distance . 6)
-     (padding . 1)
-     (stretchability . 14))
-  markup-system-spacing =
-  #'((minimum-distance . 12))
-  system-system-spacing =
-  #'((minimum-distance . 16))
-  % annotate-spacing = ##t
-  % print-all-headers = ##t
-  % print-first-page-number = ##t
-  oddFooterMarkup = \markup {
-    \center-column {
-      \line { \fromproperty #'header:title "- pàgina" \fromproperty #'page:page-number-string "de" \concat {\page-ref #'lastPage "0" "?"} }
-      \fill-line { \fromproperty #'header:copyright }
-    }
-  }
-  evenFooterMarkup = \markup {
-    \center-column {
-      \line { \fromproperty #'header:title "- pàgina" \fromproperty #'page:page-number-string "de" \concat {\page-ref #'lastPage "0" "?"} }
-      \fill-line { \fromproperty #'header:copyright }
-    }
-  }
-}
-
-\header {
-  title = "Gruss, Op. 48, nº 1"
-  subtitle = "Salutació"
-  composer = "E. Grieg (1843-1907)"
-  arranger = "H. Heine (1797-1856)"
-  % instrument = ""
-  % meter = "localmetre"
-  % opus = "localopus"
-  % piece = "localpiece"
-  poet = "Trad. Robert Garrigós i Gemma Aïsa"
-  tagline = ##f
-  copyright = \markup {
-    \center-column {
-      \line { "Gravat musical per Robert Garrigós" \with-url #"https://garrigos.cat" "https://garrigos.cat" \with-url #"https://creativecommons.org/licenses/by/4.0/deed.ca" "(CC BY 4.0)" "amb" \with-url #"https://lilypond.org" "Lilypond" "el" \data }
-      % \line { "Creative Commons Attribution 4.0 International (CC BY 4.0)" }
-    }
-  }
-}
 
 global = {
   % \overrideTimeSignatureSettings
@@ -91,8 +39,8 @@ melody = \relative c'' {
   | fs4 fs
   | \set melismaBusyProperties = #'()
   \slurDashed
-      fs'4.( fs,8)
-      \unset melismaBusyProperties
+  fs'4.( fs,8)
+  \unset melismaBusyProperties
   %15
   | fs2
   | gs4^\p b
@@ -109,8 +57,8 @@ melody = \relative c'' {
   | b
   | c4^\< c\!
   | \set melismaBusyProperties = #'()
-    \slurDashed e^\>  (c8)\! b \slurSolid
-    \unset melismaBusyProperties
+  \slurDashed e^\>  (c8)\! b \slurSolid
+  \unset melismaBusyProperties
   | \grace {[b16\=1( c]} b2\=1)
   | a4 r4
   | c4^\markup { \italic più \dynamic p } c
@@ -139,10 +87,8 @@ melody = \relative c'' {
   | R2
 }
 
-text = \lyricmode {
-  <<
-    {
-      Suau res -- so -- nes dins el cor
+catala = \lyricmode {
+  Suau res -- so -- nes dins el cor
       dol -- ça cam -- pa -- ne -- ta;
       drin -- ga, pri -- ma -- ve -- _ ra,
       so -- na per tot l'am -- ple.
@@ -153,11 +99,10 @@ text = \lyricmode {
       fes -- li~un -- a -- be -- sa -- da,
       i si un -- a ro -- sa veus,
       fes -- li~un -- a -- be -- sa -- da.
-    }
-    \new Lyrics = "secondVerse" \with { alignBelowContext = "text" }
-    {
-      \set associatedVoice = "melody"
-      Lei -- se zieht durch mein Ge -- müt __
+}
+
+alemany = \lyricmode {
+  Lei -- se zieht durch mein Ge -- müt __
       lieb -- li -- ches Ge -- läu -- te,
       klin -- ge, klei -- nes Früh -- lings -- lied,
       kling hi -- naus ins Wei -- te.
@@ -168,11 +113,9 @@ text = \lyricmode {
       sag', ich laß sie grü -- ßen,
       wenn du ei -- ne Ros -- e schaust,
       sag', ich laß sie grü -- ßen.
-    }
-
-
-  >>
 }
+
+
 
 upper = \relative c' {
   \clef treble
@@ -261,22 +204,22 @@ lower = \relative c {
     \crossStaff {<gs b>4 <fs b>4}
     \\
     {<e, e'>4\p <ds ds'>4}
-    >>
+  >>
   | <<
     \crossStaff {<fs' b>4 gs}
     \\
     {<ds, ds'>4\< <cs cs'>4\!}
-    >>
+  >>
   | <<
     {cs'4 gs'4~}
     \\
     {fs,2~}
-    >>\>
+  >>\>
   | <<
     {gs'4 fs}
     \\
-     {fs,2}
-    >>
+    {fs,2}
+  >>
   |  <b fs'>16\!\p (b' ds fs b8^.) [r16 <b, gs'>16]
   | <<
     {gs'4( fs)}
@@ -344,7 +287,8 @@ lower = \relative c {
     \crossStaff { e,2 }
     \\
     {
-      <fs,, fs'>2\fz }
+      <fs,, fs'>2\fz
+    }
   >>\>
   | <<
     \crossStaff { ds''!2 }
@@ -356,27 +300,156 @@ lower = \relative c {
   | \stemUp e16\decresc  _( b' \change Staff = "upper" \stemDown e gs b8_.) [r16 <e, a b>]
   | <e_~ a b_~ >4 <e fs b>8 r8
   | \change Staff = "lower"
-    \clef treble e16\pp (b' e gs b8^. r8)
-    \clef treble e,,16 (b' e gs b8^. r8)
+  \clef treble e16\pp (b' e gs b8^. r8)
+  \clef treble e,,16 (b' e gs b8^. r8)
   | R2
   | R2
 
   \label #'lastPage
 }
 
-\score {
-  <<
-    \new Voice = "mel" { \autoBeamOff \melody }
-    \new Lyrics \lyricsto mel \text
-    \new PianoStaff
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%% REMARKABLE %%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\book {
+  \bookOutputSuffix "remarkable"
+  \header {
+    title = "Gruss, Op. 48, nº 1"
+    subtitle = "Salutació"
+    composer = "E. Grieg (1843-1907)"
+    arranger = "H. Heine (1797-1856)"
+    poet = "Trad. Robert Garrigós i Gemma Aïsa"
+    tagline = ##f
+  }
+  \score {
     <<
-      \new Staff = "upper" \upper
-      \new Staff = "lower" \lower
+      \new Voice = "mel" { \autoBeamOff \melody }
+      \new Lyrics \lyricsto mel \catala
+      \new Lyrics \lyricsto mel \alemany
+      \new PianoStaff <<
+        \new Staff = "upper" \upper
+        \new Staff = "lower" \lower
+      >>
     >>
-  >>
-  \layout {
-    \context { \Staff \RemoveEmptyStaves }
-    \context { \PianoStaff \consists "Span_stem_engraver"}
- }
-  \midi { }
+    \layout {
+      #(layout-set-staff-size 16)
+      \context {
+        \Staff
+        % \RemoveEmptyStaves
+        % \override VerticalAxisGroup.default-staff-staff-spacing.basic-distance = #3
+        }
+    }
+    \midi { }
+  }
+
+  \paper {
+    #(set-paper-size '(cons (* 155 mm) (* 210 mm)))
+    indent = 0\mm
+    top-margin = #10
+    bottom-margin = #0
+    left-margin = #0
+    right-margin = #0
+
+    max-systems-per-page = 3
+    score-system-spacing =
+    #'((basic-distance . 12)
+       (minimum-distance . 6)
+       (padding . 1)
+       (stretchability . 10))
+    % markup-system-spacing =
+    % #'((minimum-distance . 20))
+    % system-system-spacing =
+    % #'((minimum-distance . 15))
+    % annotate-spacing = ##t
+
+  }
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%% PDF %%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\book {
+  % \bookOutputSuffix ""
+  \header {
+    title = "Gruss, Op. 48, nº 1"
+    subtitle = "Salutació"
+    composer = "E. Grieg (1843-1907)"
+    arranger = "H. Heine (1797-1856)"
+
+    poet = "Trad. Robert Garrigós i Gemma Aïsa"
+    tagline = ##f
+    copyright = \markup {
+      \center-column {
+        \line { "Gravat musical per Robert Garrigós" \with-url #"https://garrigos.cat" "https://garrigos.cat" \with-url #"https://creativecommons.org/licenses/by/4.0/deed.ca" "(CC BY 4.0)" "amb" \with-url #"https://lilypond.org" "Lilypond" "el" \data }
+        % \line { "Creative Commons Attribution 4.0 International (CC BY 4.0)" }
+      }
+    }
+  }
+  \score {
+    <<
+      \new Voice = "mel" { \autoBeamOff \melody }
+      \new Lyrics \lyricsto mel \catala
+      \new Lyrics \lyricsto mel \alemany
+      \new PianoStaff \with { \override StaffGrouper.staffgroup-staff-spacing.basic-distance = #0 } <<
+        \new Staff = "upper" \upper
+        \new Staff = "lower" \lower
+      >>
+    >>
+    \layout {
+      #(layout-set-staff-size 16.4)
+      \context {
+        \Staff
+        \RemoveEmptyStaves
+        \override VerticalAxisGroup.default-staff-staff-spacing.basic-distance = #3
+        }
+    }
+    \midi { }
+  }
+  \paper {
+    set-paper-size = "a4"
+    top-margin = 10
+    left-margin = 15
+    indent = 10
+    max-systems-per-page = 6
+    score-system-spacing =
+    #'((basic-distance . 10)
+       (minimum-distance . 5)
+       (padding . 0)
+       (stretchability . 14))
+
+    last-bottom-spacing =
+    #'((basic-distance . 15)
+       (minimum-distance . 5)
+       (padding . 0)
+       (stretchability . 10))
+    % markup-system-spacing =
+    % #'((minimum-distance . 0))
+    % system-system-spacing =
+    % #'((minimum-distance . 15))
+    % staff-staff-spacing =
+    % #'((padding . 10))
+    % default-staff-staff-spacing =
+    % #'((basic-distance . 0)
+    %    (minimum-distance . 0)
+    %    (padding . 0)
+    %    (stretchability . 10))
+    % annotate-spacing = ##t
+    % print-all-headers = ##t
+    % print-first-page-number = ##t
+    oddFooterMarkup = \markup {
+      \center-column {
+        \line { \fromproperty #'header:title "- pàgina" \fromproperty #'page:page-number-string "de" \concat {\page-ref #'lastPage "0" "?"} }
+        \fill-line { \fromproperty #'header:copyright }
+      }
+    }
+    evenFooterMarkup = \markup {
+      \center-column {
+        \line { \fromproperty #'header:title "- pàgina" \fromproperty #'page:page-number-string "de" \concat {\page-ref #'lastPage "0" "?"} }
+        \fill-line { \fromproperty #'header:copyright }
+      }
+    }
+  }
 }
