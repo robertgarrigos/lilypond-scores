@@ -94,7 +94,7 @@ catala = \lyricmode {
       so -- na per tot l'am -- ple.
 
       Ves de -- vo -- ra de la llar,
-      on vio -- le -- tes flo -- rei -- xen,
+      on les vio -- les flo -- rei -- xen,
       i si un -- a ro -- sa veus,
       fes -- li~un -- a -- be -- sa -- da,
       i si un -- a ro -- sa veus,
