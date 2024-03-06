@@ -10,6 +10,8 @@ My personal scores' archive engraved with Lilypond. These are mainly choral work
 * **[Gruss, Op. 48, n. 1](Grieg/Gruss.ly)**, veu i piano
 * **[Dereinst, Gedanke mein, Op. 48, n. 2](Grieg/Dereinst-gedanke-mein.ly)**, veu i piano
 * **[Lauf der Welt, Op. 48, n 3](Grieg/lauf-der-welt.ly)**, veu i piano
+* **[Die verschwiegene Nachtigall, Op. 48, n 4](Grieg/Die-verschwiegene-nachtigall.ly)**, veu i piano
+* **[Zur Rosenzeit, Op. 48, n 5](Grieg/Zur-Rosenzeit.ly)**, veu i piano
 
 ### Grüber, F.
 * **[Santa nit](Grüber/santa-nit.ly)**, SATB
