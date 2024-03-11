@@ -643,7 +643,7 @@ lower = \relative c {
     title = "Die verschwiegene Nachtigall, Op. 48 nº 4"
     subtitle = "El rossinyol secret"
     composer = "E. Grieg (1843-1907)"
-    arranger = "W. von der Vogelweide (1170? - 1228?)"
+    arranger = "W. von der Vogelweide (1170?-1228?)"
     poet = "Trad. Robert Garrigós"
     tagline = ##f
   }
@@ -705,7 +705,7 @@ lower = \relative c {
     title = "Die verschwiegene Nachtigall, Op. 48 nº 4"
     subtitle = "El rossinyol secret"
     composer = "E. Grieg (1843-1907)"
-    arranger = "W. von der Vogelweide (1170? - 1228?)"
+    arranger = "W. von der Vogelweide (1170?-1228?)"
     poet = "Trad. Robert Garrigós"
     tagline = ##f
     copyright = \markup {
