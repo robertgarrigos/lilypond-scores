@@ -22,6 +22,9 @@ My personal scores' archive engraved with Lilypond. These are mainly choral work
 ### Humperdinck, H.
 * **[Bona nit](Humperdinck/bona-nit.ly)**, SATB, amb text en català del duo *Abends, will ich schlafen gehn* de l'òpera *Hänsel und Gretel*
 
+### Mendelssohn, F.
+* **[Abschiedslied der Zugvögel, Op. 63, n 2](Mendelssohn/Abschiedslied-der-Zugvögel.ly)**, 2 veus i piano, amb text en català per cantar de Joaquim Pena.
+
 ### Millet, Ll.
 * **[El cant de la Senyera](Millet/cant-de-la-senyera-e.ly)**, SB, facilitat a dues veus i baixat a Mi major.
 * **[El cant de la Senyera](Millet/cant-de-la-senyera.ly)**, SB, facilitat a dues veus i baixat a Fa major.
