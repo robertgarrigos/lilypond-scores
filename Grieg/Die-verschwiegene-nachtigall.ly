@@ -114,12 +114,12 @@ melody = \relative c'' {
   | R1\fermata \bar "|."
 }
 
-catala = \lyricmode {
+catala_d = \lyricmode {
   So -- ta d'un ar -- bre,
-  a __ _ la pla -- na,
+  al -- là~a la pla -- na,
   jo em tro -- ba -- va~amb el meu es -- ti -- mat;
   ens hi veu -- rí -- eu, dol -- ça -- ment, a tots dos
-  tren --  car __ _ l'her -- ba, ten -- dra -- ment, i les flors.
+  tren -- _ car l'her -- ba, ten -- dra -- ment, i les flors.
   Prop del bosc a -- llí sen -- tí -- rem
   Tan -- da -- ra -- dai!
   Tan -- da -- ra -- dai!
@@ -140,9 +140,46 @@ catala = \lyricmode {
   Jo~hi re -- po -- sa -- va
   de tal ma -- ne -- ra
   que Déu no vul -- gui que nin -- gú~ho sa -- bés.
-  A -- llò que fé -- rem jun -- ta -- ment amb pa -- sió
+  A -- llò que fé -- rem jun -- ta -- ment amb pas -- sió
   nin -- gú~ho sa -- brà __ _
-  mes que ell i __ _ jo
+  més que ell i __ _ jo
+
+  i~un pe -- tit __ _ o -- ce -- llet __ _
+  Tan -- da -- ra -- dai!
+  Tan -- da -- ra -- dai!
+  Oh, que~ens guar -- da -- rà~el se -- cret!
+
+}
+
+catala_h = \lyricmode {
+  So -- ta d'un ar -- bre,
+  al -- là~a la pla -- na,
+  jo em tro -- ba -- va~amb la me -- va~es -- ti -- ma-da;
+  ens hi veu -- rí -- eu, dol -- ça -- ment, a tots dos
+  tren -- _ car l'her -- ba, ten -- dra -- ment, i les flors.
+  Prop del bosc a -- llí sen -- tí -- rem
+  Tan -- da -- ra -- dai!
+  Tan -- da -- ra -- dai!
+  el dolç cant del ro -- ssi -- nyol.
+
+  En a -- rri -- bar
+  a -- le -- gre~a la pra -- da
+  el meu a -- mor __ _ ja m'hi es -- pe -- ra -- va.
+  Com el seu dolç __ _
+  ca -- va -- ller em re -- bé,
+  que tan -- ta jo -- ia
+  no __ _ sé d'on em vé.
+  Quans pe -- tons cre -- ieu que~em va fer?
+  Tan -- da -- ra -- dai!
+  Tan -- da -- ra -- dai!
+  Oh, tots els que va po -- der!
+
+  Jo~hi re -- po -- sa -- va
+  de tal ma -- ne -- ra
+  que Déu no vul -- gui que nin -- gú~ho sa -- bés.
+  A -- llò que fé -- rem jun -- ta -- ment amb pas -- sió
+  nin -- gú~ho sa -- brà __ _
+  més __ _ que el -- la~i jo
 
   i~un pe -- tit __ _ o -- ce -- llet __ _
   Tan -- da -- ra -- dai!
@@ -650,7 +687,8 @@ lower = \relative c {
   \score {
     <<
       \new Voice = "mel" { \autoBeamOff \melody }
-      \new Lyrics \lyricsto mel \catala
+      \new Lyrics \lyricsto mel \catala_d
+      \new Lyrics \lyricsto mel \catala_h
       \new Lyrics \lyricsto mel \alemany
       \new PianoStaff <<
         \new Staff = "upper" \upper
@@ -718,7 +756,8 @@ lower = \relative c {
   \score {
     <<
       \new Voice = "mel" { \autoBeamOff \melody }
-      \new Lyrics \lyricsto mel \catala
+      \new Lyrics \lyricsto mel \catala_d
+      \new Lyrics \lyricsto mel \catala_h
       \new Lyrics \lyricsto mel \alemany
       \new PianoStaff \with { \override StaffGrouper.staffgroup-staff-spacing.basic-distance = #0 } <<
         \new Staff = "upper" \upper

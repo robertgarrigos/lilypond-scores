@@ -289,7 +289,7 @@ lower = \relative c {
   | bf,8) g'16 (df' bf,8) g'16 (df'
   | a,8) g'16 (cs! a,8) g'16 (cs
   | a,8) g'16 (cs a,8) g'16 (cs
-  | bf,8) g'16 (df' bf,8)^\markup {\italic "poco cresc."} g'16 (df'
+  | bf,8) g'16 (df' bf,8)^\markup {\whiteout \italic "poco cresc."} g'16 (df'
   | bf,8) g'16 (df' bf,8) g'16 (df'
   | a,8) g'16^\< (cs! a,8) g'16 (cs
   | a,8) g'16 (d' a,8) g'16 (d'\!
