@@ -9,13 +9,13 @@ My personal scores' archive engraved with Lilypond. These are mainly choral work
 ### Grieg, E.
 * **[Gruss, Op. 48, n. 1](Grieg/Gruss.ly)**, veu i piano
 * **[Dereinst, Gedanke mein, Op. 48, n. 2](Grieg/Dereinst-gedanke-mein.ly)**, veu i piano
-* **[Lauf der Welt, Op. 48, n 3](Grieg/lauf-der-welt.ly)**, veu i piano
-* **[Die verschwiegene Nachtigall, Op. 48, n 4](Grieg/Die-verschwiegene-nachtigall.ly)**, veu i piano
-* **[Zur Rosenzeit, Op. 48, n 5](Grieg/Zur-Rosenzeit.ly)**, veu i piano
-* **[Ein Traum, Op. 48, n 6](Grieg/Ein-traum.ly)**, veu i piano
-* **[Letzter Frühling, Op. 33, n 2](Grieg/Letzter-frühling.ly)**, veu i piano
-* **[Letzter Frühling, Op. 33, n 2](Grieg/Letzter-frühling-ca.ly)**, veu i piano (només text en català en Fa# major)
-* **[Letzter Frühling, Op. 33, n 2](Grieg/Letzter-fa.ly)**, veu i piano (només text en català en Fa major)
+* **[Lauf der Welt, Op. 48, n. 3](Grieg/lauf-der-welt.ly)**, veu i piano
+* **[Die verschwiegene Nachtigall, Op. 48, n. 4](Grieg/Die-verschwiegene-nachtigall.ly)**, veu i piano
+* **[Zur Rosenzeit, Op. 48, n. 5](Grieg/Zur-Rosenzeit.ly)**, veu i piano
+* **[Ein Traum, Op. 48, n. 6](Grieg/Ein-traum.ly)**, veu i piano
+* **[Letzter Frühling, Op. 33, n. 2](Grieg/Letzter-frühling.ly)**, veu i piano
+* **[Letzter Frühling, Op. 33, n. 2](Grieg/Letzter-frühling-ca.ly)**, veu i piano (només text en català en Fa# major)
+* **[Letzter Frühling, Op. 33, n. 2](Grieg/Letzter-fa.ly)**, veu i piano (només text en català en Fa major)
 
 ### Grüber, F.
 * **[Santa nit](Grüber/santa-nit.ly)**, SATB
@@ -27,7 +27,7 @@ My personal scores' archive engraved with Lilypond. These are mainly choral work
 * **[Bona nit](Humperdinck/bona-nit.ly)**, SATB, amb text en català del duo *Abends, will ich schlafen gehn* de l'òpera *Hänsel und Gretel*
 
 ### Mendelssohn, F.
-* **[Abschiedslied der Zugvögel, Op. 63, n 2](Mendelssohn/Abschiedslied-der-Zugvögel.ly)**, 2 veus i piano, amb text en català per cantar de Joaquim Pena.
+* **[Abschiedslied der Zugvögel, Op. 63, n. 2](Mendelssohn/Abschiedslied-der-Zugvögel.ly)**, 2 veus i piano, amb text en català per cantar de Joaquim Pena.
 
 ### Millet, Ll.
 * **[El cant de la Senyera](Millet/cant-de-la-senyera-e.ly)**, SB, facilitat a dues veus i baixat a Mi major.
@@ -37,6 +37,10 @@ My personal scores' archive engraved with Lilypond. These are mainly choral work
 * **[Ave Verum, K618](Mozart/Ave-verum-k618.ly)**, SATB (només cor, sense piano, en dues pàgines)
 * **[Ave Verum, K618](Mozart/Ave-verum-k618-1p.ly)**, SATB (només cor, sense piano, en una pàgines)
 * **[Dona nobis pacem](Mozart/dona-nobis-pacem.ly)**, canon a 3 veus
+
+### Schubert, F.
+* **[Meeres Stille, Op. 3, n. 2](Schubert/meeres-stille.ly)**, veu i piano Do Major
+* **[Meeres Stille, Op. 3, n. 2](Schubert/meeres-stille-d.ly)**, veu i piano Re Major
 
 ## Popular Irlandesa
 ### Balades
