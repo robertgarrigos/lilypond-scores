@@ -14,7 +14,7 @@ My personal scores' archive engraved with Lilypond. These are mainly choral work
 * **[Zur Rosenzeit, Op. 48, n 5](Grieg/Zur-Rosenzeit.ly)**, veu i piano
 * **[Ein Traum, Op. 48, n 6](Grieg/Ein-traum.ly)**, veu i piano
 * **[Letzter Frühling, Op. 33, n 2](Grieg/Letzter-frühling.ly)**, veu i piano
-* **[Letzter Frühling, Op. 33, n 2](Grieg/Letzter-frühling-ca.ly)**, veu i piano (només text en català en Mi major)
+* **[Letzter Frühling, Op. 33, n 2](Grieg/Letzter-frühling-ca.ly)**, veu i piano (només text en català en Fa# major)
 * **[Letzter Frühling, Op. 33, n 2](Grieg/Letzter-fa.ly)**, veu i piano (només text en català en Fa major)
 
 ### Grüber, F.
