@@ -39,6 +39,7 @@ My personal scores' archive engraved with Lilypond. These are mainly choral work
 * **[Dona nobis pacem](Mozart/dona-nobis-pacem.ly)**, canon a 3 veus
 
 ### Schubert, F.
+* **[Erster Verlust, Op. 5, n. 4](Schubert/erster-verlust.ly)**, veu i piano
 * **[Meeres Stille, Op. 3, n. 2](Schubert/meeres-stille.ly)**, veu i piano Do Major
 * **[Meeres Stille, Op. 3, n. 2](Schubert/meeres-stille-d.ly)**, veu i piano Re Major
 
