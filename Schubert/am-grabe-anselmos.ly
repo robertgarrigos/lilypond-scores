@@ -388,7 +388,7 @@ lower = \relative c {
     subtitle = "En la tomba d'Anselm"
     composer = "F. Schubert (1797-1828)"
     arranger = "M. Claudiu (1740-1815)"
-    poet = "Trad. Joquim Pena"
+    poet = "Trad. Joaquim Pena"
     tagline = ##f
   }
   \score {
@@ -448,7 +448,7 @@ lower = \relative c {
     subtitle = "En la tomba d'Anselm"
     composer = "F. Schubert (1797-1828)"
     arranger = "M. Claudiu (1740-1815)"
-    poet = "Trad. Joquim Pena"
+    poet = "Trad. Joaquim Pena"
     tagline = ##f
     copyright = \markup {
       \center-column {
