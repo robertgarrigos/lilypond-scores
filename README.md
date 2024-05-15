@@ -38,6 +38,9 @@ My personal scores' archive engraved with Lilypond. These are mainly choral work
 * **[Ave Verum, K618](Mozart/Ave-verum-k618-1p.ly)**, SATB (només cor, sense piano, en una pàgines)
 * **[Dona nobis pacem](Mozart/dona-nobis-pacem.ly)**, canon a 3 veus
 
+### Quilter, R.
+* **[Now sleeps the crimson petal, Op. 3, n. 2](Quilter/now-sleeps-the-crimson-petal.ly)**, veu i piano.
+
 ### Schubert, F.
 * **[Am Grab Anselmos, Op. 6, n. 3](Schubert/am-grabe-anselmos.ly)**, Veu i piano
 * **[Erster Verlust, Op. 5, n. 4](Schubert/erster-verlust.ly)**, veu i piano
