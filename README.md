@@ -48,6 +48,9 @@ My personal scores' archive engraved with Lilypond. These are mainly choral work
 * **[Meeres Stille, Op. 3, n. 2](Schubert/meeres-stille-d.ly)**, veu i piano Re Major
 * **[Meeres Stille, Op. 3, n. 2](Schubert/meeres-stille-ef.ly)**, veu i piano Mib Major
 
+### Schumann, R.
+* **[Dein Angesicht, Op. 127, n. 2](Schumann/dein-angesicht.ly)**, Vei i piano
+
 ## Popular Irlandesa
 ### Balades
 * **[The castel of Dromore](irish/The%20castle%20of%20Dromore.ly)**
