@@ -12,7 +12,7 @@ global = {
   % #'()       % beamExceptions
   \key g \major
   \time 3/4
-  \tempo "Nicht schnell"
+  \tempo "No ràpid"
 
   \tempo 4=120
   % \set Score.tempoHideNote = ##t
@@ -81,7 +81,7 @@ melody_first = \relative c'' {
   | R2.
   | R2.
   | R2.
-  | R2. \bar "|."
+  | R2. \bar "||" \time 2/2 s16
 }
 
 % melody_second = \relative c'' {
@@ -248,7 +248,7 @@ upper = \relative c' {
     \\
     { r4 g,4 g }
   >>
-  | \acciaccatura g8^(<g g'>2.) \bar "|."
+  | \acciaccatura g8^(<g g'>2.) \bar "||" s16
 
 }
 
@@ -343,13 +343,13 @@ lower = \relative c {
     \\
     { g,2. _\markup {\italic ritard. }}
   >>
-  | \acciaccatura { g16 d'~ } <g, d' b'>2.
+  | \acciaccatura { g16 d'~ } <g, d' b'>2. | s16
 
   \label #'lastPage
 }
 
 titol = "Der arme Peter (I), Op. 53, n. 3"
-subtitol = "El pobre Pere"
+subtitol = "El pobre Pere (I)"
 compositor = "R. Schumann (1810 - 1856)"
 lletrista = "H. Heine (1797 - 1856)"
 traductor = "Joaquim Pena (1873 - 1944)"
