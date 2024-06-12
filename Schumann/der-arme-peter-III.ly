@@ -12,9 +12,9 @@ global = {
   % #'()       % beamExceptions
   \key e \minor
   \time 3/4
-  \tempo "Lent"
+  \tempo "Lentament"
   \set Score.tempoHideNote = ##t
-  \tempo 4=80
+  \tempo 4=60
 
 }
 
@@ -23,11 +23,36 @@ melody = \relative c'' {
   \clef treble
   \global
 
-  \partial 4 b4
+  \partial 4 b4^\p
   | b8. g16 e8 e \tuplet 3/2 { fs( [e]) fs }
   | g2 gs4
   | a8. b16 c8 b a g
   | fs2 b4
+  | b8. g16 e8 e \tuplet 3/2 { fs( [e]) fs }
+  | g2 gs4
+  | a8. b16 c8 b a g!
+  | fs2 fs4
+  | g8. g16 g8 g \tuplet 3/2 { a( [g]) a }
+  | b4 d2
+  | g,8. g16 g8 g \tuplet 3/2 { a( [g]) a }
+  | b2 c8( [b])
+  | b8. g16 e8 e \tuplet 3/2 { fs( [e]) fs }
+  | g4 gs2
+  | a8. b16 c8 a g! fs
+  | e2 4
+  | fs8. 16 4. 8
+  | g8. 16 4. 8
+  | a8. 16 4. 8
+  | b8. 16 4 4
+  | cs8. 16 4. 8
+  | ds8. e16 fs8 ds e c
+  | b e, g4. fs8
+  | e2.
+  | R2.
+  | R2.
+  | R2.
+  | R2.\fermata \bar "|."
+
 }
 
 catala = \lyricmode {
@@ -37,7 +62,7 @@ catala = \lyricmode {
   s'a -- tu -- ra per mi -- rar- -- lo bé.
 
   Les no -- ies fan amb trist po -- sar:
-  "Si sem -- bla~un mort res -- sus -- ci -- tat!"
+  «Si sem -- bla~un mort res -- sus -- ci -- tat!»
   No, no -- ies, no ve del fos -- sar,
   és que~a -- ra~el po -- bre se n'hi va.
 
@@ -54,9 +79,9 @@ alemany = \lyricmode {
   Die Leu -- te auf der Stra -- ße stehn.
 
   Die Mäd -- chen flüs -- tern sich ins Ohr:
-  "Der stieg wohl aus dem Grab her -- vor?"
+  «Der stieg wohl aus dem Grab her -- vor?»
   Ach nein, ihr lie -- ben Jung -- fräu -- lein,
-  Der steigt erst ins Grab hin -- ein.
+  Der steigt erst ins das Grab hin -- ein.
 
   Er hat ver -- lo -- ren sei -- nen Schatz,
   Drum ist das Grab der bes -- te Platz,
@@ -64,18 +89,97 @@ alemany = \lyricmode {
   Und schla -- fen bis zum jüng -- sten Tag.
 }
 
-upper = \relative c'' {
+upper = \relative c' {
   \clef treble
   \global
 
-  a4 b c d
+  <b g' b>4\p
+  | <b g' b>8. <b e g>16 <g b e>4 <b ds fs>
+  | <b e g>2 <b f' gs>4
+  | <a e' a>8. <d gs b>16 <c a' c>8 <b e b'> <b ds a'> <b e g!>
+  | <b ds fs>2 <b b'>4
+  | <b e g b>8. <b e g>16 <g b e>4 <b ds fs>
+  | <b e g>2 <b f' gs>4
+  | <a e' a>8. <d gs b>16 <c a' c>8 <b e b'> <b ds a'> <b e g!>
+  | <b ds fs>2 <b ds fs>4
+  | <b e g>2 <d! fs a>4
+  | <d g b>4 <d g d'>2_>
+  | <<
+    { <g, g'>2 <a a'>4 }
+    \\
+    { e' g( fs8 e) }
+  >>
+  | <<
+    { <b ds b'>2 c'8.(^> b16) }
+    \\
+    { s2 ds,4 }
+  >>
+  | <<
+    { <e b'>8. <b e g>16 <a e'>8 <as e'> \tuplet 3/2 { <ds fs> <cs e> <ds fs> }}
+    \\
+    { s2 b8 a }
+  >>
+  | <g e' g>4 <b f' gs>2_>
+  | <a e' a>8. <d gs b>16 <c a' c>8 <c a'> <b e g> <a ds fs!>
+  | <g g'>2.
+  | r8. <b ds fs>16 2
+  | r8. <b e g>16 2
+  | r8. <d! fs a>16 2
+  | r8. <d g b>16 2
+  | r8.\< <e g cs>16 4.. 16\!
+  | \> \after 4 \! <fs c'! ds>4. <fs c' ds>8(_\markup {\italic ritard.} <e b' e> <e c'>)
+  | <<
+    { <e b'>( e) g4.( fs8) }
+    \\
+    { s4 c <a ds> }
+  >>
+  | <g e'>8. <e e'>16 8 8 8 8
+  | \< \after 4. \> \after 2. \! <e a c e>2.
+  | <<
+    { <e' b'>4( e fs) }
+    \\
+    { b,2 c4 }
+  >>
+  | s2.
+  | s2.
 }
 
 lower = \relative c {
   \clef bass
   \global
 
-  a2 c
+  r4
+  | <e, e'>2 <b b'>4
+  | <e e'>2 <d! d'!>4
+  | <c c'>8. <b b'>16 <a a'>8 <g! g'!> <fs fs'> <e e'>
+  | <b' b'>2 r4
+  | <e e'>2 <b b'>4
+  | <e e'>2 <d! d'!>4
+  | <c c'>8. <b b'>16 <a a'>8 <g! g'!> <fs fs'> <e e'>
+  | <b' b'>2 <b b'>4
+  | <e e'>2 <d d'>4
+  | <g g'> <b, b'>2_>
+  | <c c'>2 4
+  | <b b'>2 <a a'>4
+  | <g g'>( <c c'> <b b'>)
+  | <e e'> <d! d'!>2_>
+  | <c c'>8. <b b'>16 <a a'>8 <fs fs'> <b b'> b'
+  | <e, e'>2.
+  | <b b'>4.. 16 4
+  | <e e'>4.. 16 4
+  | <d! d'!>4.. 16 4
+  | <g g'!>4.. 16 4
+  | <as as'!>4.. 16 4
+  | <a! a'!>4. <a a'>8( <g g'> <a a'>)
+  | <b b'>( <c c'>) <a a'>4( <b b'>)
+  | <e, e'>4 r4 r4
+  | <c c'>2.
+  | <g g'>2( <a a'>4)
+  | <<
+    { <e'' g b>2^\pp <ds fs b>4 | <e gs b>2.\fermata }
+    \\
+    { <b, b'>2 4 | <e b'>2._\fermata }
+  >>
 
   \label #'lastPage
 }
