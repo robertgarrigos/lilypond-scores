@@ -14,7 +14,7 @@ global = {
   \time 2/2
   \tempo "Bastant ràpid"
   \set Score.tempoHideNote = ##t
-  \tempo 4=80
+  \tempo 4=120
 
 }
 
@@ -132,9 +132,9 @@ upper = \relative c' {
  | <b g'>4.( <c g'a>8 <d g b>4 <e g c>)
  | <f g d'>4. ( <e g c>8 <f g d'>4 <g e'>)
  | <e~ g_~ d'^(>2 <e g c)>4 <d e b'>
- | <d e gs b>4.( <c e a>8 <b e g>4 <a e' fs>)
+ | <d e gs b>4.( <c e a>8 <b e gs>4 <a e' fs>)
  | <gs e'>4.( <a e' fs>8 <b e gs>4 <c e a>)
- | <d e gs b>4.( <c e a>8 <d e gs b>4 <e g c>)
+ | <d e gs b>4.( <c e a>8 <d e gs b>4 <e gs c>)
  | <d\=1( e gs b\=2^(>2 <c\=1) e a\=2)>4 r4
  | <ds~ fs~ c'~>1^>
  | <ds fs c'>2 <b e>
