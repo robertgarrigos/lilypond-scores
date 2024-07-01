@@ -176,7 +176,7 @@ SopranoMusic = \relative c' {
   r8. ef16\f ef4 ef4 |
   r8 ef16 ef ef8 df c bf |
   \time 2/4
-  c8 (bf16 af g8 af) |
+  c8 (bf16 af g8 af) | \breathe
   f8 e c8 (d16 e |
 
   f8) \tempo 4 = 88 g^"rit." \tempo 4 = 80 af \tempo 4 = 70 bf \tempo 4 = 50|
@@ -319,7 +319,7 @@ BassMusic = \relative {
   c4 c \breathe c8. df16 |
   ef4. df8 c bf |
   \time 2/4
-  c8 (bf16 af g8 af) |
+  c8 (bf16 af g8 af) | \breathe
   f8 e c8 (d16 e |
 
   f8) g af bf |
