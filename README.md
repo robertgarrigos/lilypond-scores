@@ -49,10 +49,11 @@ My personal scores' archive engraved with Lilypond. These are mainly choral work
 * **[Meeres Stille, Op. 3, n. 2](Schubert/meeres-stille-ef.ly)**, veu i piano Mib Major
 
 ### Schumann, R.
-* **[Dein Angesicht, Op. 127, n. 2](Schumann/dein-angesicht.ly)**, Veu i piano
-* **[Der arme Peter (I), Op. 53. n. 3](Schumann/der-arme-peter-I.ly))**, Veu i piano
-* **[Der arme Peter (II), Op. 53. n. 3](Schumann/der-arme-peter-II.ly))**, Veu i piano
-* **[Der arme Peter (III), Op. 53. n. 3](Schumann/der-arme-peter-III.ly))**, Veu i piano
+* **[Dein Angesicht, Op 127, n. 2](Schumann/dein-angesicht.ly)**, Veu i piano
+* **[Der arme Peter (I), Op. 53, n. 3](Schumann/der-arme-peter-I.ly))**, Veu i piano
+* **[Der arme Peter (II), Op. 53, n. 3](Schumann/der-arme-peter-II.ly)**, Veu i piano
+* **[Der arme Peter (III), Op. 53, n. 3](Schumann/der-arme-peter-III.ly)**, Veu i piano
+* **[Ich Wandre nicht, Op. 51, n. 3](Schumann/ich-wandre-nicht.ly)**, Veu i piano
 
 ## Popular Irlandesa
 ### Balades
