@@ -53,6 +53,7 @@ My personal scores' archive engraved with Lilypond. These are mainly choral work
 * **[Der arme Peter (I), Op. 53, n. 3](Schumann/der-arme-peter-I.ly))**, Veu i piano
 * **[Der arme Peter (II), Op. 53, n. 3](Schumann/der-arme-peter-II.ly)**, Veu i piano
 * **[Der arme Peter (III), Op. 53, n. 3](Schumann/der-arme-peter-III.ly)**, Veu i piano
+* **[Frühlingsnach, Op. 32, n. 12 (Liederkreis)](Schumann/fruhlingsnacht.ly)**, Veu i piano
 * **[Ich Wandre nicht, Op. 51, n. 3](Schumann/ich-wandre-nicht.ly)**, Veu i piano
 
 ## Popular Irlandesa
