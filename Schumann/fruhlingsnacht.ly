@@ -219,7 +219,7 @@ lower = \relative c {
   \label #'lastPage
 }
 
-titol = "Frühlingsnacht, Op. 32, n. 12 (Liederkreis)"
+titol = "Frühlingsnacht, Op. 39, n. 12 (Liederkreis)"
 subtitol = "Nit de primavera"
 compositor = "R. Schumann (1810 - 1856)"
 lletrista = "J. von Heichendorff (1788 - 1857)"
