@@ -44,7 +44,7 @@ melody = \relative c' {
     | bf4 a r8 bf
     | c4. g8 a f
     | f'2.~
-    | f2^\markup {\italic ritard.} af8([ g])
+    | f2^\markup {\italic ritard.} a8([ g])
     | f4. f,8 d' c
     | bf2 r4
   }
@@ -66,7 +66,7 @@ melody = \relative c' {
   | bf4 a r8 bf
   | c4. g8 a f
   | f'2.~
-  | f2^\markup {\italic ritard.} af8([ g])
+  | f2^\markup {\italic ritard.} a8([ g])
   | f4. f,8 d' c
   | bf2 r4
   | R2.
