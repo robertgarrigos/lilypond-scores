@@ -22,7 +22,9 @@ TOC
 
 # lilypond-scores
 
-My personal scores' archive engraved with Lilypond. These are mainly choral works in the public domain. This repository contains only the Lilypond files. You will find their PDFs on my website https://www.garrigos.cat/partitures
+My personal scores' archive engraved with Lilypond. This repository contains only the Lilypond files. You will find their PDFs on my website https://www.garrigos.cat/partitures
+
+Aquest és el meu arxiu de partitures gravades amb Lilypond. Aquest repositori només conté els arxius the Lilypond. Trobareu els PDFs al meu lloc web https://www.garrigos.cat/partitures
 
 ## Clàssica
 
