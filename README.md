@@ -1,3 +1,9 @@
+# lilypond-scores
+
+My personal scores' archive engraved with Lilypond. This repository contains only the Lilypond files. You will find their PDFs on my website https://www.garrigos.cat/partitures
+
+Aquest és el meu arxiu de partitures gravades amb Lilypond. Aquest repositori només conté els arxius the Lilypond. Trobareu els PDFs al meu lloc web https://www.garrigos.cat/partitures
+
 TOC
 
 - [lilypond-scores](#lilypond-scores)
@@ -19,12 +25,6 @@ TOC
     - [Jig](#jig)
   - [Real Vocal Book](#real-vocal-book)
     - [A](#a)
-
-# lilypond-scores
-
-My personal scores' archive engraved with Lilypond. This repository contains only the Lilypond files. You will find their PDFs on my website https://www.garrigos.cat/partitures
-
-Aquest és el meu arxiu de partitures gravades amb Lilypond. Aquest repositori només conté els arxius the Lilypond. Trobareu els PDFs al meu lloc web https://www.garrigos.cat/partitures
 
 ## Clàssica
 
