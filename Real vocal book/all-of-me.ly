@@ -1,6 +1,6 @@
 \version "2.25.18"
 \language "english"
-#(set-global-staff-size 20)
+#(set-global-staff-size 22)
 % #(ly:font-config-display-fonts)
 
 data = #(strftime "%d-%m-%Y - %H:%M:%S" (localtime (current-time)))
@@ -10,11 +10,9 @@ data = #(strftime "%d-%m-%Y - %H:%M:%S" (localtime (current-time)))
 \include "jazzextras.ily"
 
 
-
-
-title = #"Autumn leaves"
-composer = #"-Johnny Mercer"
-meter = #" (Med. Jazz)"
+title = #"All of me"
+composer = #"-Simons & Marks"
+meter = #" (Med. Swing)"
 
 realBookTitle = \markup {
   \score {
@@ -46,105 +44,138 @@ realBookTitle = \markup {
 
 theNotes = \relative c' {
   \set Staff.midiInstrument = "flute"
-  \key e \minor
+  \key c \major
+  \showStartRepeatBar \bar "[|:"
+  \repeat "volta" 2 {
+    c'4 g8 e ~ e2 ~
+    e2 \times 2/3 { c'4 d c }
+    b4 gs8  e ~ e2 ~
+    e1 \break
+    a4. g8 e2 ~
+    e4 ds e8 bf' a4
+    g2 f2 ~
+    f1 \break
+    e4. ef8 d2 ~
+    d2  e8 gs c4
+    d2 c2 ~
+    c1 \break
+    b4. bf8 a2 ~
+    a2 a8 d b4
+    a1
+    b1 \bar "||" \break
 
-  | r4 e4 fs g
-  | c2 c~
-  | c4 d, e fs
-  | b1~ \break
-  | b4 c, d e
-  | a2 a~
-  | a4 b, cs ds
-  | g1 \break
-  | r4 e4 fs g
-  | c2 c~
-  | c4 d, e fs
-  | b2 b~ \break
-  | b4 c, d e
-  | a1~
-  | a4 fs a g
-  | e2 e~ \break
-  | e4 r4 ds e
-  | fs b, fs'2~
-  | fs4 fs e fs
-  | g1~ \break
-  | g4 g fs g
-  | a1~
-  | a4 d, d' c
-  | b1~ \break
-  | b4 r4 as b
-  | c c a a
-  | fs2. c'4
-  | b2 b2~ \break
-  | b2. e,4
-  | a2. g4
-  | fs2 g4 b,
-  | e1 \bar ":|]"
-
+    c4 g8 e ~ e2 ~
+    e2 \times 2/3 { c'4 d c }
+    b4 gs8  e ~e2 ~
+    e1 \break
+    a4. g8 e2 ~
+    e4 ds e8 bf' a4
+    g2 f2 ~
+    f1 \break
+  }
+  \alternative {
+    {
+      d'2 c4 b
+      d2. c4
+      b2 e,4  g4
+      b2. a4 \break
+      c2 a4 c
+      e2 e2
+      c1 ~
+      c1 \bar ":|][|:" \break
+    }
+    {
+      d2 c4 b
+      d2. c4
+      b4 b4 e,4 g4
+      b2. a4 \break
+      c2 a4 c
+      e2 e2
+      c1
+      ~c1
+      \bar ":|]"
+    }
+  }
 \label #'lastPage
 
 }
 
 theChords = \chordmode {
 
-  e1:m a:m7 d:7 g:maj7 c:maj7 fs:m7.5- b:7 e:m
-  e:m a:m7 d:7 g:maj7 c:maj7 fs:m7.5- b:7 e:m
-  e:m fs:m7.5- b:7.9- e:m e:m a:m7 d:7 g:maj7
-  g:maj7 fs:m7.5- b:7.9- e2:m7 ef:7 d:m7 df:7
-  c1:maj7 b:7.9- e:m
+  \repeat "volta" 2 {
+    c1:maj c1:maj e:7 e:7 |
+    a:7 a:7 d:m7 d:m7 |
+    e:7 e:7 a:m7 a:m7 |
+    d:7 d:7 d:m7 g:7 |
+    c1:maj c1:maj e:7 e:7 |
+    a:7 a:7 d:m7 d:m7 |
+  }
+  \alternative {
+    {
+      f1 f:m c2:maj e:m7 a1:7 |
+      d:m7 g:7 c2:6 ef:dim d2:m7 g:7 |
+    }
+    {
+      f1 f:m c2:maj e:m7 a1:7 |
+      d:m7 g:7 c1:6 c1:6 |
+    }
+  }
 
 
 }
 
 lletra = \lyricmode {
 
-  Les fu -- lles mor -- tes
-  de la tar -- dor
-  ca -- uen ab -- sor -- tes
-  sen -- se re -- mor.
+  Pren -- me tot
+  Per què no~em prens del tot?
+  Que no veus?
+  sen -- se tu no sóc res
 
-  Veig els teus lla -- vis,
-  tes gal -- tes be -- lles,
-  les te -- ves mans
-  en -- tre les me -- ves.
+  Pren -- me~els lla-vis
+  Me'n vull des -- fer d'ells
+  Pren -- me~els braços
+  Ja no~en faig res d'ells
 
-  Des que vas mar -- xar
-  els dies són llargs
-  i ben a -- viat
-  l'hi -- vern vin -- drà.
+  Sen -- se tu
+  Ja no sé com plo -- rar
+  Sen -- se tu
+  no sé com ti -- rar~en -- da-vant.
 
-  % I t'e -- nyo -- ro de no dir,
-  Com em sen -- to e -- nyo -- rat
-  a -- mor meu,
-  quan la tar -- dor
-  % ja~és a -- quí.
-  ha tor -- nat.
+  % first repeat
+  Vas pren -- dre~el tros
+  que fou el meu cor,
+  per què no~em vols pren -- dre tot.
 
+  % second repeat
+  Prens el mi -- llor
+  per què no~em prens del tot,
+  per què no~em vols pren -- dre tot?
 }
 
 theWords = \lyricmode {
-  The fall -- ing leaves _
-  drift by the win-dow,
-  the au -- tumn leaves _
-  of red and gold.
+  All of me
+  Why not take all of me
+  Can't you see
+  I'm no good with -- out you
 
+  Take my lips
+  I want to lose them
+  Take my arms
+  I ne -- ver use them
 
-  I see your lips, _
-  the sum -- mer kiss -- es,
-  the sun -- burned hands
-  I used to hold. _
+  Your Good -- bye
+  Left me with eyes that cry
+  How can I go on dear with -- out you
 
+  % first repeat
+  You took the part
+  That once was my heart
+  So why not take all of me
 
-  Since you went a -- way
-  the days grow long.
-  And soon I'll hear
-  old wint -- ter's song.
-
-
-  But I miss you most of all,
-  my dar -- ling,
-  when au -- tumn leaves
-  start to fall.
+  % second repeat
+  You took the best
+  So why not take the rest
+  So Ba -- by take all of me.
 
 
 }
@@ -193,7 +224,7 @@ theWords = \lyricmode {
                              (padding . 1))
   oddFooterMarkup = \markup \override #'(fonts . ((serif . "Linux Libertine O"))) {
     \center-column {
-      % \line { \title "- pàgina" \fromproperty #'page:page-number-string "de" \concat {\page-ref #'lastPage "0" "?"} }
+      \line { \title "- pàgina" \fromproperty #'page:page-number-string "de" \concat {\page-ref #'lastPage "0" "?"} }
       \fill-line { \fromproperty #'header:copyright }
     }
   }
