@@ -126,7 +126,7 @@ theChords = \chordmode {
 
 lletra = \lyricmode {
 
-  Pren -- me tot
+  Tot de mi,
   Per què no~em prens del tot?
   Que no veus?
   sen -- se tu no sóc res
@@ -144,12 +144,12 @@ lletra = \lyricmode {
   % first repeat
   Vas pren -- dre~el tros
   que fou el meu cor,
-  per què no~em vols pren -- dre tot.
+  per què no~em prens tot de mi?
 
   % second repeat
   Prens el mi -- llor
   per què no~em prens del tot,
-  per què no~em vols pren -- dre tot?
+  per què no~em prens tot de mi?
 }
 
 theWords = \lyricmode {
