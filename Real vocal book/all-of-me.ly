@@ -144,12 +144,12 @@ lletra = \lyricmode {
   % first repeat
   Vas pren -- dre~el tros
   que fou el meu cor,
-  per què no~em prens tot de mi?
+  per què no prens tot de mi?
 
   % second repeat
   Prens el mi -- llor
   per què no~em prens del tot,
-  per què no~em prens tot de mi?
+  per què no prens tot de mi?
 }
 
 theWords = \lyricmode {
