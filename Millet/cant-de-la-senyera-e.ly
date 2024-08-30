@@ -281,18 +281,27 @@ BassMusic = \relative {
   e8. b16 e8. b16 |
   e8 gs b\< gs\! \breathe |
   fs8. cs16 fs8. cs16 |
-  fs,8 a b ds |
+
+  <<
+    { \voiceTwo fs,8 a b ds |
   e ds e gs, |
 %35
-  b \> \tempo 4 = 60  gs \tempo 4 = 58 a (\tempo 4 = 56 fs) \tempo 4 = 48 \! \breathe | \tempo 4 = 62
-  e'8. b16 e8. b16 |
+  b \> \tempo 4 = 60  gs \tempo 4 = 58 a (\tempo 4 = 56 fs) \tempo 4 = 48 \! \breathe | \tempo 4 = 62}
+    \new Voice
+    {
+      \voiceOne fs'8 a b ds, |
+  e ds e gs8 | b gs a( fs)
+    }
+  >>
+
+  e8. b16 e8. b16 |
   e8 gs a gs |
   fs8. cs16 fs8. cs16 |
   fs8 a cs\< (fs,)\! \breathe |
 %40
   b8. fs16 b8 e, |
   a8. e16 a8 ds, |
-  e^"rit." \tempo 4 =60 b \tempo 4 = 56 e\> \tempo 4 = 50 gs,\! \tempo 4 = 46 |
+  e^"rit." \tempo 4 =60 b \tempo 4 = 56 e\> \tempo 4 = 50 <gs, gs'>\! \tempo 4 = 46 |
   b2 |
   \time 3/4
   e4.\f b8 e a, |

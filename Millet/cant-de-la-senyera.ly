@@ -282,10 +282,15 @@ BassMusic = \relative {
   f8 a c\< a\! \breathe |
   g8. d16 g8. d16 |
   g,8 bf c e |
-  f e f a, |
-%35
-  c \> \tempo 4 = 60  a \tempo 4 = 58 bf (\tempo 4 = 56 g) \tempo 4 = 48 \! \breathe | \tempo 4 = 62
-  f'8. c16 f8. c16 |
+  f e f
+  <<
+    { \voiceTwo  a, | %35
+  c \> \tempo 4 = 60  a \tempo 4 = 58 bf (\tempo 4 = 56 g) \tempo 4 = 48 \! \breathe | \tempo 4 = 62 }
+  \new Voice
+    { \voiceOne a'8 | c a bf( g) }
+  >>
+
+  f8. c16 f8. c16 |
   f8 a bf a |
   g8. d16 g8. d16 |
   g8 bf d\< (g,)\! \breathe |
