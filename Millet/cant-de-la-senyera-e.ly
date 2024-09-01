@@ -164,7 +164,7 @@ SopranoMusic = \relative c' {
   r2 r8 e,8|
 
   \time 2/4
-  b'8 (a16 g) fs8 g |
+  b'8 a16( g) fs8 g |
   \time 3/4
   a4. g16 (fs) e8 fs |
   \time 2/4
@@ -216,10 +216,10 @@ SopranoLyrics = \lyricmode {
   Al da -- munt dels nos -- tres cants
   ai -- xe -- quem u -- na se -- nye -- ra
   que~els fa -- rà més tri -- om -- fants.
-  en  lai -- re, du -- ràs,
+  en  lai -- re, en  lai -- re,
   vo -- le -- iant al grat de l'ai --re,
   el ca -- mí~as -- se -- nya -- la -- ràs.
-  can -- tai -- re,
+  en  lai -- re,
   llum als ulls i for -- ça~al braç __
   llum als ulls __ i for -- ça~al braç.
   Al da -- munt dels nos -- tres cants
