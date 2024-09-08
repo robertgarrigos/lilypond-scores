@@ -127,7 +127,7 @@ fru -- í -- em ce -- les -- tial de -- lit!
 
 Que~el som -- ni~en -- ca -- ra més for -- mós
 ha~es -- tat a -- prés ço que~ha se -- guit:
-e -- ra~al bell mig d'un bosc fro -- ndós,
+e -- ra~al bell mig d'un bosc fron -- dós,
 e -- ra pel mes de maig flo -- rit,
 
 co -- rri -- a~el flum, bro -- ta -- va~el tany,
