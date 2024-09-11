@@ -91,6 +91,7 @@ TOC
 - **[Der arme Peter (III), Op. 53, n. 3](Schumann/der-arme-peter-III.ly)**, Veu i piano
 - **[Frühlingsnach, Op. 39, n. 12 (Liederkreis)](Schumann/fruhlingsnacht.ly)**, Veu i piano
 - **[Ich Wandre nicht, Op. 51, n. 3](Schumann/ich-wandre-nicht.ly)**, Veu i piano
+- **[Nur wer die Sehnsucht kennt, Op. 48, n. 3](Schumann/nur-wer-die-sehnsucht-kennt.pdf)**, Veu i piano.
 
 ## Popular Irlandesa
 
