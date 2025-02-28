@@ -13,12 +13,15 @@ TOC
     - [Grüber, F.](#grüber-f)
     - [Haendel, G. F.](#haendel-g-f)
     - [Humperdinck, H.](#humperdinck-h)
+    - [Lehmann, Liza](#lehmann-liza)
     - [Mendelssohn, F.](#mendelssohn-f)
     - [Millet, Ll.](#millet-ll)
     - [Mozart, W. A.](#mozart-w-a)
     - [Quilter, R.](#quilter-r)
     - [Schubert, F.](#schubert-f)
     - [Schumann, R.](#schumann-r)
+  - [Nadales](#nadales)
+    - [Melodia, lletra i acords](#melodia-lletra-i-acords)
   - [Popular Irlandesa](#popular-irlandesa)
     - [Balades](#balades)
     - [Hornpipe](#hornpipe)
@@ -56,6 +59,9 @@ TOC
 
 - **[Bona nit](Humperdinck/bona-nit.ly)**, SATB, amb text en català del duo *Abends, will ich schlafen gehn* de l'òpera *Hänsel und Gretel*
 
+### Lehmann, Liza
+- **[Evensong](Lehmann/evensong.ly)**, veu i piano
+
 ### Mendelssohn, F.
 
 - **[Abschiedslied der Zugvögel, Op. 63, n. 2](Mendelssohn/Abschiedslied-der-Zugvögel.ly)**, 2 veus i piano, amb text en català per cantar de Joaquim Pena.
@@ -92,6 +98,24 @@ TOC
 - **[Frühlingsnach, Op. 39, n. 12 (Liederkreis)](Schumann/fruhlingsnacht.ly)**, Veu i piano
 - **[Ich Wandre nicht, Op. 51, n. 3](Schumann/ich-wandre-nicht.ly)**, Veu i piano
 - **[Nur wer die Sehnsucht kennt, Op. 48, n. 3](Schumann/nur-wer-die-sehnsucht-kennt.pdf)**, Veu i piano.
+
+## Nadales
+
+### Melodia, lletra i acords
+
+- **[A Betlem me'n vull anar](Nadales/a-betlem-men-vull-anar.ly)**
+- **[El dimoni escuat](Nadales/el-dimoni-escuat.ly)**
+- **[El noi de la mare](Nadales/el-noi-de-la-mare.ly)**
+- **[El petit vailet](Nadales/el-petit-vailet.ly)**
+- **[El rabadà](Nadales/el-rabada.ly)**
+- **[El trineu](Nadales/el-trineu.ly)**
+- **[Els àngels allà a la gòria](Nadales/els-angels-alla-a-la-gloria.ly)**
+- **[Fum, fum, fum](Nadales/fum-fum-fum.ly)**
+- **[L'àngel i els pastors](Nadales/l-angel-i-els-pastors.ly)**
+- **[La pastora Caterina](Nadales/la-pastora-caterina.ly)**
+- **[Les dotze van tocant](Nadales/les-dotze-van-tocant.ly)**
+- **[Quan somrius](Nadales/quan-somrius.ly)**
+- **[Santa nit](Nadales/santa-nit.ly)**
 
 ## Popular Irlandesa
 
