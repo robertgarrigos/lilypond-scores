@@ -175,12 +175,17 @@ upper = \relative c'' {
     { d16 c d c\> d bf c\!\pp bf c bf c a | bf a bf_- a_- bf_- g_-~g4_\markup {\italic "coll voce"} a8_-}
   >>
   | <d f>16 c <d f> c <d f> c <d f> c <d f> c <d f> c
-  | <d f> c <d f> c <d f> c \stemDown <d f> c <d f> c <d f> c
+  | <d f> c <d f> c <d f> c <d f> c <d f> c <d f> c
 
   | <<
-    { s2. |<d f>4. <bf d>\fermata }
+    {
+      \voiceOne s2.
+      | \once \override NoteColumn.force-hshift = #0 \tweak Dots.extra-offset #'(-2.5 . 0) <d f>4. <bf d>\fermata
+    }
     \\
-    { <d f>16 c <d f> c <d f> c <d f> c <d f> c <d f> c~ | c4. s4. }
+    {
+      \voiceTwo <d f>16 c <d f> c <d f> c <d f> c <d f> c <d f> c~ | \once \override NoteColumn.force-hshift = #2 c4. s4.
+    }
   >>
 }
 
@@ -296,11 +301,26 @@ lower = \relative c {
     { <f, f'>2.~| <f f'>4.~ <f f'>4 f'8_- }
   >>
   | <<
-    { r4^\markup {\italic dolcissimo} r8 <f d'>4.( | <c' f> <d bf'>4)\once \shape #'((0.5 . 4) (0.5 . 3) (0 . 0) (0 . 0))(\change Staff = "upper" f''8)^\markup {\raise #2 \italic "m.e"}(| c4. g'4 f8 | d'2.\fermata) }
+    \new Voice {
+      \voiceOne r4^\markup { \italic dolcissimo } r8 <f d'>4.(
+      | <c' f> <d bf'>4)\once \shape #'((0.5 . 4) (0.5 . 3) (0 . 0) (0 . 0))( \change Staff = "upper" \voiceOne f''8 ) ^\markup { \raise #2 \italic "m.e" } (
+      | c4. g'4 f8
+      | \tweak Dots.extra-offset #'(-2.1 . 0) d'2.\fermata)
+    }
     \\
-    { <bf,,,, f'>2.~ | <bf f'>~ | <bf f'>~ | <bf f'>4.^\ppp <bf f' bf>\fermata}
+    {
+      \voiceTwo <bf,,,, f'>2.~
+      | <bf f'>~
+      | <bf f'>~
+      | <bf f'>4.^\ppp <bf f' bf>\fermata
+    }
     \\
-    { s2. | s2. | s2. | s4. \crossStaff d'4.}
+    {
+      s2.
+      | s2.
+      | s2.
+      | s4. \crossStaff d'4.
+    }
   >>
 
   \label #'lastPage
