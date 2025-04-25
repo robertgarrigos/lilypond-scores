@@ -99,7 +99,8 @@ TOC
 - **[Frühlingsnach, Op. 39, n. 12 (Liederkreis)](Schumann/fruhlingsnacht.ly)**, Veu i piano
 - **[Ich Wandre nicht, Op. 51, n. 3](Schumann/ich-wandre-nicht.ly)**, Veu i piano
 - **[Nur wer die Sehnsucht kennt, Op. 48, n. 3](Schumann/nur-wer-die-sehnsucht-kennt.ly)**, Veu i piano.
-- **[Stille Thränen, Op. 35, n. 10](Schumann/stille-thränen.ly)**, Veu i piano.
+- **[Stille Thränen, Op. 35, n. 10](Schumann/stille-thränen-c.ly)**, Veu i piano (Do major - C Major).
+- **[Stille Thränen, Op. 35, n. 10](Schumann/stille-thränen-bf.ly)**, Veu i piano (Sib major - Bf Major).
 
 ### Strauss, R
 
