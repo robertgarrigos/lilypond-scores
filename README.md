@@ -20,6 +20,7 @@ TOC
     - [Quilter, R.](#quilter-r)
     - [Schubert, F.](#schubert-f)
     - [Schumann, R.](#schumann-r)
+    - [Strauss, R](#strauss-r)
   - [Nadales](#nadales)
     - [Melodia, lletra i acords](#melodia-lletra-i-acords)
   - [Popular Irlandesa](#popular-irlandesa)
@@ -97,7 +98,12 @@ TOC
 - **[Der arme Peter (III), Op. 53, n. 3](Schumann/der-arme-peter-III.ly)**, Veu i piano
 - **[Frühlingsnach, Op. 39, n. 12 (Liederkreis)](Schumann/fruhlingsnacht.ly)**, Veu i piano
 - **[Ich Wandre nicht, Op. 51, n. 3](Schumann/ich-wandre-nicht.ly)**, Veu i piano
-- **[Nur wer die Sehnsucht kennt, Op. 48, n. 3](Schumann/nur-wer-die-sehnsucht-kennt.pdf)**, Veu i piano.
+- **[Nur wer die Sehnsucht kennt, Op. 48, n. 3](Schumann/nur-wer-die-sehnsucht-kennt.ly)**, Veu i piano.
+- **[Stille Thränen, Op. 35, n. 10](Schumann/stille-thränen.ly)**, Veu i piano.
+
+### Strauss, R
+
+- **[Allerseelen, Op.10, n. 8](Strauss/Allerseelen.ly)**, Veu i piano.
 
 ## Nadales
 
