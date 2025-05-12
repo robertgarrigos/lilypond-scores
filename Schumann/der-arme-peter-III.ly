@@ -188,64 +188,8 @@ titol = "Der arme Peter (III), Op. 53, n. 3"
 subtitol = "El pobre Pere (III)"
 compositor = "R. Schumann (1810 - 1856)"
 lletrista = "H. Heine (1797 - 1856)"
-traductor = "Joaquim Pena (1873 - 1944)"
+traductor = "Trad. Joaquim Pena (1873 - 1944)"
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%% REMARKABLE %%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\book {
-  \bookOutputSuffix "remarkable"
-  \header {
-    title = \titol
-    subtitle = \subtitol
-    composer = \compositor
-    arranger = \lletrista
-    poet = \traductor
-    tagline = ##f
-  }
-  \score {
-    <<
-      \new Voice = "mel" { \autoBeamOff \melody }
-      \new Lyrics \lyricsto mel \catala
-      \new Lyrics \lyricsto mel \alemany
-      \new PianoStaff <<
-        \new Staff = "upper" \upper
-        \new Staff = "lower" \lower
-      >>
-    >>
-    \layout {
-      #(layout-set-staff-size 16)
-      \context {
-        \Staff
-        % \RemoveEmptyStaves
-        % \override VerticalAxisGroup.default-staff-staff-spacing.basic-distance = #3
-      }
-    }
-  }
-
-  \paper {
-    #(set-paper-size '(cons (* 155 mm) (* 210 mm)))
-    indent = 0\mm
-    top-margin = #10
-    bottom-margin = #0
-    left-margin = #0
-    right-margin = #0
-
-    max-systems-per-page = 3
-    score-system-spacing =
-    #'((basic-distance . 12)
-       (minimum-distance . 6)
-       (padding . 1)
-       (stretchability . 10))
-    % markup-system-spacing =
-    % #'((minimum-distance . 20))
-    % system-system-spacing =
-    % #'((minimum-distance . 15))
-    % annotate-spacing = ##t
-
-  }
-}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%% PDF %%%%%%%%%%%%%%%%%%%
@@ -262,7 +206,7 @@ traductor = "Joaquim Pena (1873 - 1944)"
     tagline = ##f
     copyright = \markup {
       \center-column {
-        \line { "Gravat musical per Robert Garrigós" \with-url #"https://garrigos.cat" "https://garrigos.cat" \with-url #"https://creativecommons.org/licenses/by/4.0/deed.ca" "(CC BY 4.0)" "amb" \with-url #"https://lilypond.org" "Lilypond" "el" \data }
+        \line { "Gravat per Robert Garrigós" \with-url #"https://garrigos.cat" "https://garrigos.cat" \with-url #"https://creativecommons.org/licenses/by/4.0/deed.ca" "(CC BY 4.0)" "amb" \with-url #"https://lilypond.org" "Lilypond" "el" \data }
         % \line { "Creative Commons Attribution 4.0 International (CC BY 4.0)" }
       }
     }
@@ -271,7 +215,9 @@ traductor = "Joaquim Pena (1873 - 1944)"
     <<
       \new Voice = "mel" { \autoBeamOff \melody }
       \new Lyrics \lyricsto mel \catala
-      \new Lyrics \lyricsto mel \alemany
+      \new Lyrics \with {
+        \override LyricText.font-shape = #'italic
+      } \lyricsto mel \alemany
       \new PianoStaff \with { \override StaffGrouper.staffgroup-staff-spacing.basic-distance = #0 } <<
         \new Staff = "upper" \upper
         \new Staff = "lower" \lower

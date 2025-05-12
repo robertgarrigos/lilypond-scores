@@ -346,7 +346,10 @@ upper = \relative c'' {
       \voiceTwo s4 s4 <f bf>4 <ef af!>
     }
   >>
-  | <<
+  |
+    % \override Score.SpacingSpanner.strict-note-spacing = ##t
+    % \set Score.proportionalNotationDuration = #(ly:make-moment 1/16)
+  <<
     \new Voice {
       \voiceOne bf'2~ bf8 df( c bf)
       | <g bf>4( <f af> <bf, c e g> <af c f>)
@@ -357,6 +360,12 @@ upper = \relative c'' {
       | e8 df c af s2
       | \stemUp <bf ef! bf'>2\p
     }
+    \\
+    \new Voice {
+      % per espaiar la primaera blanca del compàs 38
+      % afegeixo una tercera veu amb notes invisibles
+      \voiceThree s1 | s1 |  \override Stem #'transparent = ##t \hide d4 \hide d4
+    }
   >>
     <b ef gf b>2\arpeggio
   | <c ef gf c>2\arpeggio <a ef' f>4(\> <af d f bf>\!\arpeggio)
@@ -365,6 +374,7 @@ upper = \relative c'' {
     \new Voice {
       \voiceOne df'2( c4 bf~
       | bf)\> ef,2( f4)
+      \once \set PianoStaff.connectArpeggios = ##f
       | <g, bf ef g>1\arpeggio\!
     }
     \\
@@ -416,13 +426,16 @@ lower = \relative c {
       \voiceThree
     }
   >>
-  | d8([\sustainOn d'] d') r8\sustainOff c,,8([\sustainOn d'] d') r8\tweak Y-offset -4\sustainOff
-  | <b,, b'>2~_(\sustainOn <b b'>8\sustainOff \sustainOn [d']^\cresc
+  | d8([\sustainOn d'] d') r8\sustainOff c,,8([\sustainOn d'] d')\sustainOff r8\sustainOn
+
+  | <b,, b'>2~_(\tweak X-offset 9 \sustainOff <b b'>8
+
+  \sustainOn [d']^\cresc
   % \moreVerticalDynamicTextSpannerWhiteoutII #'(1 . 0.5)
 
-  d') r\tweak X-offset 0.5 \tweak Y-offset -4 \sustainOff
-  | <bf,, bf'>4.( ef'8 ef') r <bf,, bf'>4
-  | <bff bff'>4.( bff''8 bff') r <bff,,, bff'>4
+  d') r\tweak X-offset 0.5  \sustainOff
+  | <bf,, bf'>4.( \sustainOn ef'8 ef') r <bf,, bf'>4 \tweak X-offset 3 \tweak Y-offset -4 \sustainOff
+  | <bff bff'>4.\sustainOn ( bff''8 bff') r <bff,,, bff'>4 \tweak X-offset 3.5 \tweak Y-offset -4 \sustainOff
   | af8(^>^\mf \sustainOn
   % \moreVerticalDynamicTextSpannerWhiteoutII #'(1 . 0)
   af'^\dim df4 f g!)\tweak X-offset 2 \tweak Y-offset -4 \sustainOff
@@ -435,7 +448,7 @@ lower = \relative c {
       \voiceTwo s2 s8 d,,8\rest d4\rest \tweak X-offset 2 \tweak Y-offset -4 \sustainOff
     }
   >>
-  | c,8(^\p \tweak Y-offset -4 \sustainOn g' c ef g c) r8 g,(
+  | c,8(^\p \tweak Y-offset -4 \sustainOn g' c ef g c) r8 g,(\tweak X-offset 1 \sustainOff
   | c2~ c4.) g8(
   | c,2~) c8\sustainOn bf( ef bf')\tweak X-offset 1 \tweak Y-offset -4 \sustainOff
   | <<
@@ -634,7 +647,7 @@ traductor = "Trad. J. Pena (1873-1944)"
     tagline = ##f
     copyright = \markup {
       \center-column {
-        \line { "Gravat musical per Robert Garrigós" \with-url #"https://garrigos.cat" "https://garrigos.cat" \with-url #"https://creativecommons.org/licenses/by/4.0/deed.ca" "(CC BY 4.0)" "amb" \with-url #"https://lilypond.org" "Lilypond" "el" \data }
+        \line { "Gravat per Robert Garrigós" \with-url #"https://garrigos.cat" "https://garrigos.cat" \with-url #"https://creativecommons.org/licenses/by/4.0/deed.ca" "(CC BY 4.0)" "amb" \with-url #"https://lilypond.org" "Lilypond" "el" \data }
         % \line { "Creative Commons Attribution 4.0 International (CC BY 4.0)" }
       }
     }
@@ -643,7 +656,9 @@ traductor = "Trad. J. Pena (1873-1944)"
     <<
       \new Voice = "mel_f"  { \set Staff.midiInstrument = "voice oohs" \autoBeamOff \melody_first }
       \new Lyrics \lyricsto mel_f \catala_first
-      \new Lyrics \lyricsto mel_f \alemany_first
+      \new Lyrics \with {
+        \override LyricText.font-shape = #'italic
+      } \lyricsto mel_f \alemany_first
       % \new Voice = "mel_s" { \autoBeamOff \melody_second }
       % \new Lyrics \lyricsto mel_s \catala_second
       % \new Lyrics \lyricsto mel_s \alemany_second

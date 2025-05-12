@@ -1,4 +1,4 @@
-\version "2.25.18"
+\version "2.25.23"
 \language "english"
 #(set-global-staff-size 22)
 % #(ly:font-config-display-fonts)
@@ -197,12 +197,14 @@ theWords = \lyricmode {
       \new ChordNames \theChords
       \new Voice = soloist \theNotes
       \new Lyrics \lyricsto soloist \lletra
-      \new Lyrics \lyricsto soloist \theWords
+      \new Lyrics \with {
+        \override LyricText.font-shape = #'italic
+      } \lyricsto soloist \theWords
     >>
     \layout {
-      \override Score.Clef #'break-visibility = #'#(#f #f #f)  % make only the first clef visible
-      \override Score.KeySignature #'break-visibility = #'#(#f #f #f)  % make only the first time signature visible
-      \override Score.SystemStartBar #'collapse-height = #1  % allow single-staff system bars
+      % \override Score.Clef #'break-visibility = #'#(#f #f #f)  % make only the first clef visible
+      % \override Score.KeySignature #'break-visibility = #'#(#f #f #f)  % make only the first time signature visible
+      % \override Score.SystemStartBar #'collapse-height = #1  % allow single-staff system bars
     }
     \midi {
       \tempo 4 = 110

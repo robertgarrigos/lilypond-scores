@@ -438,65 +438,7 @@ lower = \relative c {
   \label #'lastPage
 }
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%% REMARKABLE %%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\book {
-  \bookOutputSuffix "remarkable"
-  \header {
-    title = "Letzter Frühling"
-    subtitle = "L'última primavera"
-    composer = "E. Grieg (1843-1907)"
-    arranger = "H. Schmidt (1854-1923)"
-    poet = "Joan Maragall (1860-1911)"
-    tagline = ##f
-  }
-  \score {
-    <<
-      \new Voice = "mel_f" { \autoBeamOff \melody_first }
-      \new Lyrics \lyricsto mel_f \catala_first
-      \new Lyrics \lyricsto mel_f \alemany_first
-      % \new Voice = "mel_s" { \autoBeamOff \melody_second }
-      % \new Lyrics \lyricsto mel_s \catala_second
-      % \new Lyrics \lyricsto mel_s \alemany_second
-      \new PianoStaff <<
-        \new Staff = "upper" \upper
-        \new Staff = "lower" \lower
-      >>
-    >>
-    \layout {
-      #(layout-set-staff-size 16)
-      \context {
-        \Staff
-        % \RemoveEmptyStaves
-        % \override VerticalAxisGroup.default-staff-staff-spacing.basic-distance = #3
-      }
-    }
-  }
-
-  \paper {
-    #(set-paper-size '(cons (* 155 mm) (* 210 mm)))
-    indent = 0\mm
-    top-margin = #10
-    bottom-margin = #0
-    left-margin = #0
-    right-margin = #0
-
-    max-systems-per-page = 3
-    score-system-spacing =
-    #'((basic-distance . 12)
-       (minimum-distance . 6)
-       (padding . 1)
-       (stretchability . 10))
-    % markup-system-spacing =
-    % #'((minimum-distance . 20))
-    % system-system-spacing =
-    % #'((minimum-distance . 15))
-    % annotate-spacing = ##t
-
-  }
-}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%% PDF %%%%%%%%%%%%%%%%%%%
@@ -513,7 +455,7 @@ lower = \relative c {
     tagline = ##f
     copyright = \markup {
       \center-column {
-        \line { "Gravat musical per Robert Garrigós" \with-url #"https://garrigos.cat" "https://garrigos.cat" \with-url #"https://creativecommons.org/licenses/by/4.0/deed.ca" "(CC BY 4.0)" "amb" \with-url #"https://lilypond.org" "Lilypond" "el" \data }
+        \line { "Gravat per Robert Garrigós" \with-url #"https://garrigos.cat" "https://garrigos.cat" \with-url #"https://creativecommons.org/licenses/by/4.0/deed.ca" "(CC BY 4.0)" "amb" \with-url #"https://lilypond.org" "Lilypond" "el" \data }
         % \line { "Creative Commons Attribution 4.0 International (CC BY 4.0)" }
       }
     }
@@ -522,7 +464,9 @@ lower = \relative c {
     <<
       \new Voice = "mel_f" { \autoBeamOff \melody_first }
       \new Lyrics \lyricsto mel_f \catala_first
-      \new Lyrics \lyricsto mel_f \alemany_first
+      \new Lyrics \with {
+        \override LyricText.font-shape = #'italic
+      } \lyricsto mel_f \alemany_first
       % \new Voice = "mel_s" { \autoBeamOff \melody_second }
       % \new Lyrics \lyricsto mel_s \catala_second
       % \new Lyrics \lyricsto mel_s \alemany_second

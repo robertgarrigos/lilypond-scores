@@ -134,7 +134,7 @@ traductor = ""
     copyright = \markup {
       \center-column {
         \small
-        \line { "Gravat musical per Robert Garrigós" \with-url #"https://garrigos.cat" "https://garrigos.cat" \with-url #"https://creativecommons.org/licenses/by/4.0/deed.ca" "(CC BY 4.0)" }
+        \line { "Gravat per Robert Garrigós" \with-url #"https://garrigos.cat" "https://garrigos.cat" \with-url #"https://creativecommons.org/licenses/by/4.0/deed.ca" "(CC BY 4.0)" }
         \line { "amb" \with-url #"https://lilypond.org" "Lilypond" "el" \data  }
       }
     }
