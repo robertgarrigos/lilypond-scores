@@ -233,7 +233,7 @@ titol = "Dein Angesicht, Op. 127, n. 2"
 subtitol = "Ton rostre"
 compositor = "R. Schumann (1810 - 1856)"
 lletrista = "H. Heine (1797 - 1856)"
-traductor = "Antoni Colomé Bosomba (1870 - 1952)"
+traductor = "Trad. Antoni Colomé Bosomba (1870 - 1952)"
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%

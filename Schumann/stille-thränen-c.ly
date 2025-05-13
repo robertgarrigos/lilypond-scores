@@ -690,8 +690,8 @@ lower = \relative c {
   \label #'lastPage
 }
 
-titol = "Llarmes secretes, Op. 35, n. 10"
-subtitol = "Stille Thränen"
+titol = "Stille Thränen, Op. 35, n. 10"
+subtitol = "Llarmes secretes"
 compositor = "R. Schumann (1810-1856)"
 lletrista = "J. Kerner (1786-1862)"
 traductor = "Trad. J. Pena (1873-1944)"

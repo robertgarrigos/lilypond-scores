@@ -1,4 +1,4 @@
-\version "2.25.23"
+\version "2.25.26"
 \language "english"
 #(set-global-staff-size 22)
 % #(ly:font-config-display-fonts)

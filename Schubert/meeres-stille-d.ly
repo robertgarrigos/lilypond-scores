@@ -191,11 +191,11 @@ lower = \relative c, {
 \book {
   % \bookOutputSuffix ""
   \header {
-    title = "Meeres Stille"
+    title = "Meeres Stille, Op. 3, n. 2"
     subtitle = "Mar bonança"
-    composer = "F. Schubert (1797-1828), Op. 3, n. 2"
+    composer = "F. Schubert (1797-1828)"
     arranger = "J. W. Goethe (1749-1832)"
-    poet = "Trad. catalana: Joaquim Pena (1873-1944)"
+    poet = "Trad. Joaquim Pena (1873-1944)"
     tagline = ##f
     copyright = \markup {
       \center-column {
