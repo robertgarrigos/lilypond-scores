@@ -283,11 +283,11 @@ lower = \relative c {
 \book {
   % \bookOutputSuffix ""
   \header {
-    title = "Letzter Frühling"
+    title = "Letzter Frühling, Op. 33, n. 2"
     subtitle = "L'última primavera"
     composer = "E. Grieg (1843-1907)"
     arranger = "H. Schmidt (1854-1923)"
-    poet = "Joan Maragall (1860-1911)"
+    poet = "Trad. Joan Maragall (1860-1911)"
     tagline = ##f
     copyright = \markup {
       \center-column {
