@@ -328,7 +328,7 @@ lower = \relative c {
 
 titol = "Evensong"
 subtitol = "Cançó del vespre"
-compositor = "Música: Liza Lehmann"
+compositor = "Música: Liza Lehmann (1862-1918)"
 lletrista = "Lletra: Constance Morgan"
 traductor = "Traducció: Viviana Salisi"
 

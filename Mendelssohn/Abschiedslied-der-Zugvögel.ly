@@ -356,7 +356,7 @@ lower = \relative c {
     subtitle = "Comiat de l'ocell de pas"
     composer = "F. Mendelssohn (1809-1847)"
     arranger = "A. von Fallersleben (1798-1874)"
-    poet = "J. Pena (1873-1944)"
+    poet = "Trad. J. Pena (1873-1944)"
     tagline = ##f
     copyright = \markup {
       \center-column {
