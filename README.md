@@ -20,6 +20,7 @@ TOC
     - [Quilter, R.](#quilter-r)
     - [Schubert, F.](#schubert-f)
     - [Schumann, R.](#schumann-r)
+    - [Sieczynski, R.](#sieczynski-r)
     - [Strauss, R](#strauss-r)
   - [Nadales](#nadales)
     - [Melodia, lletra i acords](#melodia-lletra-i-acords)
@@ -101,6 +102,10 @@ TOC
 - **[Nur wer die Sehnsucht kennt, Op. 48, n. 3](Schumann/nur-wer-die-sehnsucht-kennt.ly)**, Veu i piano.
 - **[Stille Thränen, Op. 35, n. 10](Schumann/stille-thränen-c.ly)**, Veu i piano (Do major - C Major).
 - **[Stille Thränen, Op. 35, n. 10](Schumann/stille-thränen-bf.ly)**, Veu i piano (Sib major - B flat Major).
+
+### Sieczynski, R.
+
+- **[Wien, du Stadt meiner Träume](Sieczynski/wien-du-stadt-meiner-träume.ly)**, veu i piao
 
 ### Strauss, R
 
