@@ -566,8 +566,8 @@ lower = \relative c {
   \label #'lastPage
 }
 
-titol = "Dia dels morts, Op. 10, n. 8"
-subtitol = "Allerseelen"
+titol = "Allerseelen, Op. 10, n. 8"
+subtitol = "Dia dels morts"
 compositor = "R. Strauss (1864-1949)"
 lletrista = "H. von Glim (1812-1864)"
 traductor = "Trad. J. Pena (1873-1944)"
